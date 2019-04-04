@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo-link" href="index.html">
+        <img class="page-header__logo-image" src="http://placehold.it/75x22" alt="Логотип приложения 'Pink'" width="75" height="22">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toogle" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <section class="competition">
+        <p class="competition__info">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+        <form class="competition__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="competition__item">
+            <label  class="competition__signature subject" for="surname-user">Фамилия:</label>
+            <input class="competition__field" id="surname-user" type="text" name="surname" placeholder="Укажите фамилию *">
+          <p>
+          <p class="competition__item">
+            <label class="competition__signature subject" for="name-user">Имя:</label>
+            <input class="competition__field" id="name-user" type="text" name="name" placeholder="Введите ваше имя *">
+          <p>
+          <p class="competition__item">
+            <label class="competition__signature subject" for="patronymic-user">Отчество:</label>
+            <input class="competition__field" id="patronymic-user" type="text" name="patronymic" placeholder="Ну и отчетсво тоже">
+          <p>
+          <fieldset class="competition__progress progress">
+            <legend class="progress__title subject">Ваши безбашенные достижения в путешествии</legend>
+            <label class="progress__signature">
+              <input class="progress__field" type="checkbox" name="progress" checked>
+              Сделал селфи с акулой
+            </label>
+            <label class="progress__signature">
+              <input class="progress__field" type="checkbox" name="progress" checked>
+              Обгорел на пляже
+            </label>
+            <label class="progress__signature">
+              <input class="progress__field" type="checkbox" name="progress">
+              Видел Чака Норриса
+            </label>
+            <label class="progress__signature">
+              <input class="progress__field" type="checkbox" name="progress">
+              Накупил сувениров
+            </label>
+            <label class="progress__signature">
+              <input class="progress__field" type="checkbox" name="progress" checked>
+              Удержал башню
+            </label>
+            <label class="progress__signature">
+              <input class="progress__field" type="checkbox" name="progress">
+              Разгромил отель
+            </label>
+          </fieldset>
+          <fieldset class="competition__contacts-user contacts-user">
+            <ul class="contacts-user__list">
+              <li class="contacts-user__item">
+                <p class="contacts-user__indent">
+                  <label class="contacts-user__signature subject" for="tel-user">Номер телефона</label>
+                </p>
+                <input class="contacts-user__field" id="tel-user" type="tel" name="telephone" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="contacts-user__item">
+                <p class="contacts-user__indent">
+                  <label class="contacts-user__signature subject" for="email-user">Адрес почты</label>
+                </p>
+                <input class="contacts-user__field" id="email-user" type="email" name="email" placeholder="Введите почту*">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="competition__attachment attachment">
+            <legend class="attachment__title subject">С каким приложением путешествовали?</legend>
+            <label class="attachment__signature">
+              <input class="attachment__field" type="radio" name="attachment" value="Pink для iOS" checked>
+              Pink для iOS
+            </label>
+            <label class="attachment__signature">
+              <input class="attachment__field" type="radio" name="attachment" value="Pink на Android">
+              Pink на Android
+            </label>
+            <label class="attachment__signature">
+              <input class="attachment__field" type="radio" name="attachment" value="Windows Phone">
+              Windows Phone
+            </label>
+          </fieldset>
+          <fieldset class="competition__impressions impressions">
+            <legend class="impressions__title subject">Опишите свои эмоции</legend>
+            <textarea class="impressions__text" name="impressions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="competition__button button-form" type="submit" value="Отправить форму">Отправить форму</button>
+          <p class="competition__footnote"><sup class="competition__star">*</sup> — обязательные поля</p>
+        </form>
+        <div class="competition__popup error-message">
+          <h2 class="competition__popup-title">Что-то пошло не так!</h2>
+          <p class="competition__hint">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="competition__button error-message__button" type="button" value="OK">OK</button>
+        </div>
+        <div class="competition__popup announcement">
+          <h2 class="competition__popup-title">Ваша заявка отправлена</h2>
+          <p class="competition__hint">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+          <button class="competition__button announcement__button" type="button" value="Закрыть окно">Закрыть окно</button>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo-link" href="index.html">
+        <img class="page-footer__logo" src="http://placehold.it/147x40" alt="Логотип приложения Pink" width="147" height="40">
+      </a>
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--twitter" href="#">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--fasebook" href="#">
+            <span class="visually-hidden">Fasebook</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--youtube" href="#">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__logo-htmlacademy" src="http://placehold.it/27x134" alt="Логотип HTML Academy" width="27" height="34">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
