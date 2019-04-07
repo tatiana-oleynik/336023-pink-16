@@ -1,0 +1,45 @@
+.characteristics__list {
+  @include indents;
+
+  background-color: #f2f2f2;
+  list-style: none;
+}
+
+.characteristics__item {
+  @include indents;
+}
+
+.characteristics__title {
+  @include indents;
+  margin-bottom: 22px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+}
+
+.characteristics__merit {
+  @include indents;
+  margin-bottom: 40px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: center;
+  color: #283645;
+}
+
+.characteristics__slogan {
+  @include indents;
+
+  &--top {
+    margin-top: 46px;
+    margin-bottom: 39px;
+  }
+
+  &--bottom {
+    margin-bottom: 119px;
+  }
+}
