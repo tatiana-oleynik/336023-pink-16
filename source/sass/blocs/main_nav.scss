@@ -1,0 +1,39 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toogle {
+  position: absolute;
+  right: 18px;
+  top: -50px;
+
+  background-color: #283645;
+  border: none;
+}
+
+.main-nav__list {
+  @include indents;
+
+  list-style: none;
+}
+
+.main-nav__item {
+  @include indents;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  text-align: center;
+
+  box-shadow: 0 1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+}
+
+.main-nav__link {
+  @include indents;
+
+  font-size: 17px;
+  line-height: 31px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}

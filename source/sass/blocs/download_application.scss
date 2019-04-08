@@ -1,0 +1,48 @@
+.download-application {
+  background-color: #1d2631;
+}
+
+.download-application__button {
+  @include indents;
+  display: block;
+  margin-bottom: 31px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  min-width: 281px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+}
+
+.download-application__list {
+  @include indents;
+  margin-bottom: 28px;
+
+  list-style: none;
+}
+
+.download-application__item {
+  @include indents;
+}
+
+.download-application__link {
+  @include indents;
+}
+
+.download-application__info {
+  @include indents;
+  padding-bottom: 37px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+}

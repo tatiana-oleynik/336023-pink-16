@@ -1,0 +1,10 @@
+.page-main__title {
+  @include indents;
+  margin-bottom: 87px;
+
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 300;
+  text-align: center;
+  color: #000000;
+}
