@@ -1,0 +1,32 @@
+.photo-loading__title {
+  @include indents;
+  margin-bottom: 49px;
+}
+
+.photo-loading__form {
+  background-color: #f2f2f2;
+}
+
+.photo-loading__button {
+  min-width: 280px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-align: center;
+
+  background-color: #f2f2f2;
+  border-radius: 10px;
+
+  &--post {
+    color: #d22856;
+
+    border: 3px solid #d22856;
+  }
+
+  &--cancellation {
+    color: #e3e4e4;
+
+    border: 3px solid #e3e4e4;
+  }
+}
