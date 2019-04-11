@@ -1,7 +1,9 @@
 @import "blocs/mixins.scss";
+@import "blocs/variables.scss";
 @import "blocs/characteristics.scss";
 @import "blocs/download_application.scss";
 @import "blocs/main_nav.scss";
+@import "blocs/page_footer.scss";
 @import "blocs/page_header.scss";
 @import "blocs/page_main.scss";
 @import "blocs/wrapper_comment.scss";
@@ -16,3 +18,5 @@
 @import "blocs/tariffs.scss";
 @import "blocs/contacts.scss";
 @import "blocs/photo_loading.scss";
+@import "blocs/social_list.scss";
+@import "blocs/copyright.scss";

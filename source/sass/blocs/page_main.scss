@@ -1,10 +1,21 @@
 .page-main__title {
   @include indents;
-  margin-bottom: 87px;
+
+  padding-bottom: 85px;
 
   font-size: 24px;
   line-height: normal;
   font-weight: 300;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 148px;
+
+    font-size: 50px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-bottom: 100px;
+  }
 }
