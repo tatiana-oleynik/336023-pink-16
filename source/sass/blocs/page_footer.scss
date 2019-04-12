@@ -19,6 +19,18 @@
   }
 }
 
+.page-footer--index {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desctop-width) {
+    display: flex;
+  }
+}
+
 .page-footer__logo-link {
   @include indents;
   margin-bottom: 39px;
