@@ -1,0 +1,27 @@
+.reviews__item {
+  @include indents;
+}
+
+.reviews__author-name {
+  @include indents;
+  display: block;
+  margin-bottom: 30px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.reviews__text {
+  @include indents;
+  margin-bottom: 38px;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: center;
+  color: #283645;
+}

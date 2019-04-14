@@ -1,0 +1,40 @@
+.contacts__list {
+  @include indents;
+  list-style: none;
+}
+
+.contacts__item {
+  @include indents;
+  margin-bottom: 26px;
+}
+
+.contacts__title {
+  @include indents;
+  margin-bottom: 44px;
+}
+
+.contacts__desc {
+  @include indents;
+
+  font-size: 18px;
+  line-height: normal;
+  font-weight: bold;
+  text-align: center;
+  color: #283645;
+}
+
+.contacts__details {
+  @include indents;
+  display: block;
+
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 300;
+  text-align: center;
+  color: #d22856;
+  text-decoration: none;
+
+  &--address {
+    font-style: normal;
+  }
+}

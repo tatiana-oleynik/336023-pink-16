@@ -1,0 +1,58 @@
+.tariffs {
+  background-color: #f2f2f2;
+}
+
+.tariffs__list {
+  @include indents;
+}
+
+.tariffs__item {
+  @include indents;
+}
+
+.tariffs__table-header {
+  background-color: #283645;
+}
+
+.tariffs__empty {
+  background-color: #f2f2f2;
+}
+
+.tariffs__denotation {
+  @include indents;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.tariffs__cost {
+  @include indents;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.tariffs__field {
+  @include indents;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: left;
+  text-transform: uppercase;
+  color: #283645;
+
+  background-color: #ffffff;
+}
+
+.tariffs__value {
+  background-color: #ffffff;
+}
