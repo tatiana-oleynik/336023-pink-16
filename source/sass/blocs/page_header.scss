@@ -26,11 +26,16 @@
   height: 22px;
   margin-top: 23px;
   margin-bottom: 16px;
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     width: 147px;
     height: 40px;
     margin-top: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
   }
 }
 

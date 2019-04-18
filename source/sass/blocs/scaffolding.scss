@@ -48,3 +48,14 @@ input[type="radio"].visually-hidden {
     padding-right: 10px;
   }
 }
+
+.wrapper-header {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
