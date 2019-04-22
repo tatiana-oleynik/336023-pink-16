@@ -1,35 +1,48 @@
 .download-application {
   background-color: #1d2631;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    width: 300px;
+    width: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 320px;
+    margin-left: 120px;
+    padding-top: 49px;
   }
 }
 
 .download-application__title {
+  @include indents;
   display: none;
 
   font-size: 40px;
-  line-height: normal;
+  line-height: 50px;
   font-weight: 300;
-  text-align: center;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
     display: block;
+    padding-top: 65px;
+    margin-bottom: 25px;
+
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+
     font-size: 50px;
+    line-height: 58px;
   }
 }
 
 .download-application__button {
   @include indents;
   display: block;
-  margin-bottom: 31px;
-  margin-right: 20px;
-  margin-left: 20px;
+
+  margin-bottom: 46px;
   padding-top: 16px;
   padding-bottom: 16px;
 
@@ -42,6 +55,12 @@
 
   border: 3px solid #ffffff;
   border-radius: 30px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+
+    font-size: 21px;
+  }
 }
 
 .download-application__list {
@@ -50,16 +69,25 @@
   width: 210px;
 
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 15px;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .download-application__item {
   @include indents;
-  margin-right: 32px;
+  margin-right: 37px;
 
   &--last {
+    padding-top: 3px;
     margin-right: 0;
   }
 
@@ -74,11 +102,16 @@
 
 .download-application__info {
   @include indents;
-  padding-bottom: 37px;
+  padding-bottom: 30px;
 
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
   text-align: center;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding-bottom: 110px;
+  }
 }

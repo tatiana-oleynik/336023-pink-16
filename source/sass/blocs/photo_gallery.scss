@@ -34,6 +34,8 @@
 }
 
 .photo-gallery__item--publication-day {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     width: 620px;
     margin-right: 0;
@@ -46,6 +48,8 @@
 }
 
 .photo-gallery__item--publication-day .photo-gallery__author {
+  padding-top: 25px;
+
   @media (min-width: $tablet-width) {
     order: 1;
 
@@ -111,19 +115,44 @@
 .photo-gallery__title {
   margin-top: 0;
   margin-bottom: 54px;
-  padding-top: 54px;
+  padding-top: 47px;
+
+  @media (min-width: $tablet-width) {
+    width: 440px;
+    padding-top: 90px;
+    padding-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 575px;
+    padding-top: 92px;
+    padding-left: 200px;
+  }
+}
+
+.photo-gallery__appeal {
+  margin-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
 }
 
 .photo-gallery__panorama {
   @include indents;
+  position: absolute;
+  top: -5px;
+  left: 140px;
+
   width: 140px;
-  padding-top: 13px;
-  padding-bottom: 11px;
+  padding-top: 7px;
+  padding-bottom: 6px;
 
   font-size: 12px;
   line-height: 24px;
   font-weight: bold;
   text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
 
   background-color: #d22856;
@@ -133,7 +162,7 @@
   @include indents;
   display: inline-block;
 
-  padding-top: 24px;
+  padding-top: 10px;
 
   font-size: 14px;
   line-height: 24px;
@@ -159,7 +188,7 @@
 .photo-gallery__gallery-comment {
   @include indents;
 
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 
   font-size: 14px;
   line-height: 24px;
@@ -182,7 +211,7 @@
   @include indents;
   display: flex;
 
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 
   font-size: 12px;
   line-height: 24px;
