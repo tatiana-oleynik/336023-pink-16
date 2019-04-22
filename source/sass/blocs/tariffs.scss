@@ -1,9 +1,27 @@
 .tariffs {
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+    padding-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 65px;
+    padding-bottom: 95px;
+  }
 }
 
 .tariffs__list {
   @include indents;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }
 
 .tariffs__item {
@@ -11,6 +29,10 @@
 }
 
 .tariffs__table-header {
+  @media (min-width: $tablet-width) {
+    width: 155px;
+  }
+
   background-color: #283645;
 }
 
@@ -27,6 +49,18 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
+
+    font-size: 18px;
+  }
 }
 
 .tariffs__cost {
@@ -38,6 +72,18 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 13px;
+
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 19px;
+
+    font-size: 24px;
+  }
 }
 
 .tariffs__field {
@@ -51,6 +97,23 @@
   color: #283645;
 
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 155px;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+
+    text-transform: inherit;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 22px;
+    padding-bottom: 19px;
+    padding-left: 22px;
+
+    font-size: 18px;
+  }
 }
 
 .tariffs__value {

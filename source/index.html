@@ -10,47 +10,31 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="wrapper">
+      <div class="wrapper-header">
         <div class="page-header__grid">
           <a class="page-header__logo-link">
             <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения 'Pink'" width="75" height="22">
           </a>
-          <!-- <button class="page-header__toogle-menu" type="button">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
-              <g id="miu">
-                <g id="editor_list_view_hambuger_menu_glyph">
-                  <g>
-                    <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-                  </g>
-                  <g>
-                    <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-                  </g>
-                </g>
-              </g>
-            </svg>
-            <span class="visually-hidden">Открыть меню</span>
-          </button> -->
-          <nav class="main-nav">
-            <button class="main-nav__toogle-close" type="button">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-                <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
-              </svg>
-              <span class="visually-hidden">Закрыть меню</span>
+          <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
             </button>
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a class="main-nav__link">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="photo.html">Фотографии</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="main-nav__item main-nav__item--last">
-                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-              </li>
-            </ul>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--active">
+                  <a class="main-nav__link">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="photo.html">Фотографии</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="form.html">Конкурс</a>
+                </li>
+                <li class="main-nav__item main-nav__item--last">
+                  <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
           </nav>
         </div>
       </div>
@@ -59,7 +43,7 @@
       <h1 class="visually-hidden">Приложение "Pink"</h1>
       <section class="download-application">
         <div class="wrapper">
-          <p class="download-application__title">Взгляните на жизнь иначе!</p>
+          <p class="download-application__title">Взгляните <br> на жизнь иначе!</p>
           <a class="download-application__button" href="https://www.apple.com/itunes/working-itunes/market/">Скачать приложение</a>
           <ul class="download-application__list">
             <li class="download-application__item">
@@ -127,7 +111,7 @@
         <div class="characteristics__fill-study">
           <div class="wrapper">
             <div class="characteristics__study">
-              <h3 class="characteristics__study-title">Эффект на 24 часа!</h3>
+              <h3 class="characteristics__study-title"><span class="characteristics__effect">Эффект</span> на 24 часа!</h3>
               <p class="characteristics__study-merit">Британские ученые провели исследования и доказали,что положительный эффект от использования приложения длится целые сутки!</p>
               <a class="characteristics__study-link" href="#">Узнать больше об исследовании</a>
             </div>
@@ -139,25 +123,28 @@
           <div class="reviews__wrapper slider">
             <h2 class="visually-hidden">Отзывы о приложении</h2>
             <div class="reviews__list slider__list">
-              <blockquote class="reviews__item slider__item">
+              <blockquote class="reviews__item reviews__item--active slider__item">
                 <cite class="reviews__author-name">Николай Петров</cite>
                 <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <p class="reviews__personal-data">25 лет, водитель трамвая</p>
               </blockquote>
             </div>
             <div class="reviews__list slider__list">
               <blockquote class="reviews__item slider__item">
                 <cite class="reviews__author-name">Николай Петров</cite>
                 <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <p class="reviews__personal-data">25 лет, водитель трамвая</p>
               </blockquote>
             </div>
             <div class="reviews__list slider__list">
               <blockquote class="reviews__item slider__item">
                 <cite class="reviews__author-name">Николай Петров</cite>
                 <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <p class="reviews__personal-data">25 лет, водитель трамвая</p>
               </blockquote>
             </div>
             <p class="reviews__toggles slider__toggles">
-              <a class="slider__toggle slider__toogle--active">
+              <a class="slider__toggle slider__toggle--active">
                 <span class="visually-hidden">1</span>
               </a>
               <a class="slider__toggle">
@@ -226,14 +213,14 @@
                 </td>
               </tr>
             </table>
-            <p class="tariffs__toggles slider__toggles">
-              <a class="slider__toggle">
+            <p class="tariffs__toggles">
+              <a class="tariffs__toggle">
                 <span class="visually-hidden">1</span>
               </a>
-              <a class="slider__toggle slider__toogle--active">
+              <a class="tariffs__toggle">
                 <span class="visually-hidden">2</span>
               </a>
-              <a class="slider__toggle">
+              <a class="tariffs__toggle">
                 <span class="visually-hidden">3</span>
               </a>
             </p>
@@ -244,15 +231,15 @@
         <div class="wrapper">
           <p class="contacts__title caption">Остались вопросы? <br> Свяжитесь с нами!</p>
           <ul class="contacts__list">
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--tel">
               <p class="contacts__desc">Звоните:</p>
               <a class="contacts__details" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
             </li>
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--mail">
               <p class="contacts__desc">Пишите:</p>
               <a class="contacts__details" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item-address">
               <p class="contacts__desc">Приезжайте в гости:</p>
               <address class="contacts__details contacts__details--address">ул. Большая Конюшенная, 19/8</address>
             </li>
@@ -306,5 +293,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/form.js"></script>
   </body>
 </html>

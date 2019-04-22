@@ -1,5 +1,11 @@
 .reviews__item {
   @include indents;
+  display: none;
+
+  &--active {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .reviews__author-name {
@@ -13,6 +19,17 @@
   font-style: normal;
   text-align: center;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-bottom: 10px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .reviews__text {
@@ -24,4 +41,35 @@
   font-weight: normal;
   text-align: center;
   color: #283645;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-bottom: 41px;
+
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 188px;
+  }
+}
+
+.reviews__personal-data {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    @include indents;
+    order: 3;
+    display: block;
+    margin-bottom: 40px;
+
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }

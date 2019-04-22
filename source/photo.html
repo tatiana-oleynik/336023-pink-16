@@ -10,32 +10,31 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="wrapper">
+      <div class="wrapper-header">
         <div class="page-header__grid">
           <a class="page-header__logo-link" href="index.html">
             <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения 'Pink'" width="75" height="22">
           </a>
-          <nav class="main-nav">
-            <button class="main-nav__toogle-close" type="button">
-              <span class="visually-hidden">Закрыть меню</span>
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-                <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
-              </svg>
+          <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
             </button>
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="index.html">Главная</a>
-              </li>
-              <li class="main-nav__item main-nav__item--active">
-                <a class="main-nav__link" href="photo.html">Фотографии</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-              </li>
-            </ul>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="main-nav__item main-nav__item--active">
+                  <a class="main-nav__link" href="photo.html">Фотографии</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="form.html">Конкурс</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
           </nav>
         </div>
       </div>
@@ -43,19 +42,19 @@
     <main class="page-main">
       <div class="page-main__fill-title">
         <div class="wrapper">
-          <h1 class="page-main__title">Фотографии пользователей</h1>
+          <h1 class="page-main__title">Фотографии <br> пользователей</h1>
         </div>
       </div>
       <section class="photo-gallery">
         <div class="wrapper">
-          <p class="photo-gallery__title caption-photo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <p class="photo-gallery__title caption-photo"><span class="photo-gallery__appeal">Взгляните на фотографии, которые выкладывают пользователи!</span> Видите, как не хватает ваших?</p>
           <ul class="photo-gallery__list">
             <li class="photo-gallery__item photo-gallery__item--publication-day">
               <a class="photo-gallery__link" href="#">
                 <img class="photo-gallery__photo" src="img/panorama-mobile@1x.jpg" alt="Фотография пользователя" width="320" height="137">
               </a>
               <p class="photo-gallery__panorama">Панорама дня</p>
-              <div class="wrapper-comment">
+              <div class="photo-gallery__wrapper-comment">
                 <a class="photo-gallery__author" href="#">Анна</a>
                 <span class="photo-gallery__dispatch-time">(5 минут назад)</span>
                 <p class="photo-gallery__gallery-comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
@@ -74,7 +73,7 @@
               <a class="photo-gallery__link" href="#">
                 <img class="photo-gallery__photo" src="img/photo-car-mobile@1x.jpg" alt="Фотография пользователя" width="280" height="180">
               </a>
-              <div class="wrapper-comment">
+              <div class="photo-gallery__wrapper-comment">
                 <a class="photo-gallery__author" href="#">Левон</a>
                 <span class="photo-gallery__dispatch-time">(5 часов назад)</span>
                 <p class="photo-gallery__gallery-comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -93,7 +92,7 @@
               <a class="photo-gallery__link" href="#">
                 <img class="photo-gallery__photo" src="img/photo-drumset-mobile@1x.jpg" alt="Фотография пользователя" width="280" height="180">
               </a>
-              <div class="wrapper-comment">
+              <div class="photo-gallery__wrapper-comment">
                 <a class="photo-gallery__author" href="#">Антон</a>
                 <span class="photo-gallery__dispatch-time">(12 часов назад)</span>
                 <p class="photo-gallery__gallery-comment">Соседи будут рады!</p>
@@ -112,7 +111,7 @@
               <a class="photo-gallery__link" href="#">
                 <img class="photo-gallery__photo" src="img/photo-window-mobile@1x.jpg" alt="Фотография пользователя" width="280" height="180">
               </a>
-              <div class="wrapper-comment">
+              <div class="photo-gallery__wrapper-comment">
                 <a class="photo-gallery__author" href="#">Борис</a>
                 <span class="photo-gallery__dispatch-time">(20 часов назад)</span>
                 <p class="photo-gallery__gallery-comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -131,7 +130,7 @@
               <a class="photo-gallery__link" href="#">
                 <img class="photo-gallery__photo" src="img/photo-fair-mobile@1x.jpg" alt="Фотография пользователя" width="280" height="180">
               </a>
-              <div class="wrapper-comment">
+              <div class="photo-gallery__wrapper-comment">
                 <a class="photo-gallery__author" href="#">Сергей</a>
                 <span class="photo-gallery__dispatch-time">(25 часов назад)</span>
                 <p class="photo-gallery__gallery-comment">Самая кубанская в мире!</p>
@@ -150,7 +149,7 @@
               <a class="photo-gallery__link" href="#">
                 <img class="photo-gallery__photo" src="img/photo-pov-mobile@1x.jpg" alt="Фотография пользователя" width="280" height="180">
               </a>
-              <div class="wrapper-comment">
+              <div class="photo-gallery__wrapper-comment">
                 <a class="photo-gallery__author" href="#">Максим</a>
                 <span class="photo-gallery__dispatch-time">(40 часов назад)</span>
                 <p class="photo-gallery__gallery-comment">Где снег-то?</p>
@@ -169,7 +168,7 @@
               <a class="photo-gallery__link" href="#">
                 <img class="photo-gallery__photo" src="img/photo-wing-mobile@1x.jpg" alt="Фотография пользователя" width="280" height="180">
               </a>
-              <div class="wrapper-comment">
+              <div class="photo-gallery__wrapper-comment">
                 <a class="photo-gallery__author" href="#">Надежда</a>
                 <span class="photo-gallery__dispatch-time">(45 часов назад)</span>
                 <p class="photo-gallery__gallery-comment">Всем GM и взаимные лайки!</p>
@@ -189,7 +188,7 @@
       </section>
       <section class="photo-loading">
         <div class="wrapper">
-          <p class="photo-loading__title caption-photo">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <p class="photo-loading__title caption-photo">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
         </div>
         <div class="photo-loading__fill-form">
           <div class="wrapper">
@@ -200,31 +199,35 @@
                 </picture>
                 <input class="photo-loading__field visually-hidden" type="file">
               </div>
-              <ul class="photo-loading__list">
-                <li class="photo-loading__item photo-loading__item--active">
-                  <button class="photo-loading__tool" type="button"></button>
-                  <div class="photo-loading__tools-range photo-loading__tools-range--active">
-                    <div class="photo-loading__strip"></div>
-                    <button class="photo-loading__range" type="submit"></button>
-                  </div>
-                </li>
-                <li class="photo-loading__item">
-                  <button class="photo-loading__tool" type="button"></button>
-                  <div class="photo-loading__tools-range">
-                    <div class="photo-loading__strip"></div>
-                    <button class="photo-loading__range" type="submit"></button>
-                  </div>
-                </li>
-                <li class="photo-loading__item">
-                  <button class="photo-loading__tool" type="button"></button>
-                  <div class="photo-loading__tools-range">
-                    <div class="photo-loading__strip"></div>
-                    <button class="photo-loading__range" type="submit"></button>
-                  </div>
-                </li>
-              </ul>
-              <button class="photo-loading__button photo-loading__button--post" type="submit" value="Запостить">Запостить</button>
-              <button class="photo-loading__button photo-loading__button--cancellation" type="reset" value="Отмена">Отмена</button>
+              <div class="photo-loading__wrapper">
+                <ul class="photo-loading__list">
+                  <li class="photo-loading__item photo-loading__item--active">
+                    <button class="photo-loading__tool" type="button"></button>
+                    <div class="photo-loading__tools-range photo-loading__tools-range--active">
+                      <div class="photo-loading__strip"></div>
+                      <button class="photo-loading__range" type="submit"></button>
+                    </div>
+                  </li>
+                  <li class="photo-loading__item">
+                    <button class="photo-loading__tool" type="button"></button>
+                    <div class="photo-loading__tools-range">
+                      <div class="photo-loading__strip"></div>
+                      <button class="photo-loading__range" type="submit"></button>
+                    </div>
+                  </li>
+                  <li class="photo-loading__item">
+                    <button class="photo-loading__tool" type="button"></button>
+                    <div class="photo-loading__tools-range">
+                      <div class="photo-loading__strip"></div>
+                      <button class="photo-loading__range" type="submit"></button>
+                    </div>
+                  </li>
+                </ul>
+                <div class="photo-loading__wrapper-button">
+                  <button class="photo-loading__button photo-loading__button--post" type="submit" value="Запостить">Запостить</button>
+                  <button class="photo-loading__button photo-loading__button--cancellation" type="reset" value="Отмена">Отмена</button>
+                </div>
+              </div>
             </form>
           </div>
         </div>
@@ -273,5 +276,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/form.js"></script>
   </body>
 </html>
