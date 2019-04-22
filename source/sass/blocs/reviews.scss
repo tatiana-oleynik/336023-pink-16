@@ -1,17 +1,12 @@
 .reviews__item {
   @include indents;
+  display: none;
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &--one {
-    display: none;
-  }
-
-  &--two {
-    display: none;
+  &--active {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
