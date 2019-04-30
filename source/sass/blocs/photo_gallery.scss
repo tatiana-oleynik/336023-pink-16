@@ -201,7 +201,8 @@
   }
 }
 
-.photo-gallery__link {
+.photo-gallery__link,
+.photo-gallery__link-day {
   @include indents;
 
   text-decoration: none;
@@ -256,5 +257,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    padding-left: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
   }
 }

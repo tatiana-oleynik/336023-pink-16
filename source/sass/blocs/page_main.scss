@@ -1,8 +1,13 @@
+.page-main {
+  position: relative;
+}
+
 .page-main__title {
   @include indents;
 
-  padding-top: 30px;
-  padding-bottom: 80px;
+  position: absolute;
+  top: -140px;
+  left: 25%;
 
   font-size: 24px;
   line-height: 30px;
@@ -11,19 +16,33 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    padding-top: 80px;
-    padding-bottom: 148px;
+    top: -270px;
 
     font-size: 50px;
     line-height: 53px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 69px;
-    padding-bottom: 100px;
-    padding-left: 41px;
+    top: -230px;
+    left: 35%;
 
     line-height: 59px;
+  }
+
+  &--form {
+    top: -155px;
+    left: 5%;
+
+    @media (min-width: $tablet-width) {
+      top: -300px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -250px;
+      left: 18%;
+
+      width: 750px;
+    }
   }
 }
 

@@ -51,11 +51,9 @@ input[type="radio"].visually-hidden {
 
 .wrapper-header {
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
 
   @media (min-width: $desktop-width) {
-    max-width: 940px;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
