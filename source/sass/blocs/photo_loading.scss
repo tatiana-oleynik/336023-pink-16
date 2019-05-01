@@ -27,6 +27,10 @@
 }
 
 .photo-loading__wrapper-button {
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
@@ -106,7 +110,12 @@
   @media (min-width: $tablet-width) {
     flex-direction: column;
 
+    margin-bottom: 30px;
     padding-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
   }
 }
 
@@ -191,6 +200,11 @@
     width: 22px;
     height: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
 }
 
 .photo-loading__fill {
@@ -200,6 +214,11 @@
   @media (min-width: $tablet-width) {
     width: 24px;
     height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 43px;
   }
 }
 
@@ -211,6 +230,11 @@
   @media (min-width: $tablet-width) {
     width: 16px;
     height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -238,6 +262,22 @@
       left: 90px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    top: 13px;
+
+    &--crop {
+      left: 160px;
+    }
+
+    &--fill {
+      left: 310px;
+    }
+
+    &--contrast {
+      left: 250px;
+    }
+  }
 }
 
 .photo-loading__strip {
@@ -257,6 +297,13 @@
     left: 60px;
 
     width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+    left: 80px;
+
+    width: 289px;
   }
 }
 

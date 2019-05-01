@@ -1,14 +1,50 @@
+.copyright {
+  position: relative;
+}
+
 .copyright__text {
+  position: absolute;
+  left: -80px;
+
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
   color: #283645;
 
+  @media (min-width: $tablet-width) {
+    top: 40px;
+    left: 60px;
+  }
+
   @media (min-width: $desktop-width) {
+    top: 90px;
+    left: 250px;
+
     font-size: 18px;
   }
 }
 
 .copyright__link {
   @include indents;
+  position: relative;
+}
+
+.copyright__link svg {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+
+  width: 27px;
+  height: 34px;
+
+  fill: #d22856;
+
+  @media (min-width: $tablet-width) {
+    top: -20px;
+    left: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 390px;
+  }
 }
