@@ -35,11 +35,18 @@
 }
 
 .competition__signature {
+  margin-left: 21px;
+
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
   color: #d22856;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-right: 19px;
+  }
 }
 
 input[type="text"]::placeholder {
@@ -57,4 +64,28 @@ input[type="text"]::placeholder {
   padding-bottom: 21px;
 
   border: 2px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    &--surname {
+      min-width: 516px;
+    }
+
+    &--name {
+      min-width: 557px;
+    }
+
+    &--patronymic {
+      min-width: 516px;
+    }
+  }
+}
+
+.competition__item {
+  &--last {
+    margin-bottom: 42px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 61px;
+    }
+  }
 }

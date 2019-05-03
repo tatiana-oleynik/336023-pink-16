@@ -79,8 +79,9 @@
     overflow: visible;
   }
 
-  @media (min-width: $tablet-width) Х
+  @media (min-width: $tablet-width) {
     width: 940px;
+  }
 }
 
 .tariffs__list {
