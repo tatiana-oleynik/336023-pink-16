@@ -10,36 +10,38 @@
   </head>
   <body>
     <header class="page-header page-header--internal">
-      <div class="wrapper-header">
-        <div class="page-header__grid">
-          <a class="page-header__logo-link" href="index.html">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения 'Pink'" width="75" height="22">
-            </picture>
-          </a>
-          <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list">
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="index.html">Главная</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="photo.html">Фотографии</a>
-                </li>
-                <li class="main-nav__item main-nav__item--active">
-                  <a class="main-nav__link" href="form.html">Конкурс</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+      <div class="page-header__wrapper">
+        <div class="wrapper">
+          <div class="page-header__grid">
+            <a class="page-header__logo-link" href="index.html">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения 'Pink'" width="75" height="22">
+              </picture>
+            </a>
+            <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
+              <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+              <div class="main-nav__wrapper">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="index.html">Главная</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="photo.html">Фотографии</a>
+                  </li>
+                  <li class="main-nav__item main-nav__item--active">
+                    <a class="main-nav__link" href="form.html">Конкурс</a>
+                  </li>
+                  <li class="main-nav__item main-nav__item--last">
+                    <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -51,7 +53,10 @@
       </div>
       <section class="competition">
         <div class="wrapper">
-          <p class="competition__info">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+          <p class="competition__info">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            <span class="competition__deal">Пожалуйста, заполните форму ниже:</span>
+          </p>
           <form class="competition__form" action="https://echo.htmlacademy.ru" method="post">
             <p class="competition__item">
               <label  class="competition__signature subject" for="surname-user">Фамилия:</label>

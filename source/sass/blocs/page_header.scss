@@ -49,6 +49,9 @@
 
     &--internal {
       min-height: 440px;
+
+      background-position: top;
+      background-size: 1200px 730px;
     }
   }
 
@@ -81,6 +84,9 @@
 
     &--internal {
       min-height: 395px;
+
+      background-position: top;
+      background-size: 2560px 853px;
     }
   }
 
@@ -99,6 +105,10 @@
       background-image: url("../img/iphone-hand-desktop@2x.png");
     }
   }
+}
+
+.page-header__wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-header__grid {
@@ -136,12 +146,6 @@
 
 .page-header__logo-link {
   @include indents;
-  box-sizing: border-box;
 
   min-height: 66px;
-
-  @media (min-width: $desktop-width) {
-    margin-right: 172px;
-    padding-left: 130px;
-  }
 }

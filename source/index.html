@@ -10,36 +10,38 @@
   </head>
   <body>
     <header class="page-header page-header--prime">
-      <div class="wrapper-header">
-        <div class="page-header__grid">
-          <a class="page-header__logo-link">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения 'Pink'" width="75" height="22">
-            </picture>
-          </a>
-          <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list">
-                <li class="main-nav__item main-nav__item--active">
-                  <a class="main-nav__link">Главная</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="photo.html">Фотографии</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="form.html">Конкурс</a>
-                </li>
-                <li class="main-nav__item main-nav__item--last">
-                  <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+      <div class="page-header__wrapper">
+        <div class="wrapper">
+          <div class="page-header__grid">
+            <a class="page-header__logo-link">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения 'Pink'" width="75" height="22">
+              </picture>
+            </a>
+            <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
+              <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+              <div class="main-nav__wrapper">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item main-nav__item--active">
+                    <a class="main-nav__link">Главная</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="photo.html">Фотографии</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="form.html">Конкурс</a>
+                  </li>
+                  <li class="main-nav__item main-nav__item--last">
+                    <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -183,7 +185,7 @@
         </div>
       </section>
       <section class="tariffs">
-        <div class="wrapper">
+        <!-- <div class="wrapper"> -->
           <div class="tariffs__wrapper slider">
             <table class="tariffs__list slider__list">
               <tr class="tariffs__item">
@@ -207,62 +209,62 @@
               <tr class="tariffs__item">
                 <td class="tariffs__field">Розовый фильтр</td>
                 <td class="tariffs__value tariffs__value--included">
+                  <span class="tariffs__value-text">Розовый фильтр</span>
                   <span class="visually-hidden">Включено</span>
                 </td>
                 <td class="tariffs__value tariffs__value--included">
+                  <span class="tariffs__value-text">Розовый фильтр</span>
                   <span class="visually-hidden">Включено</span>
                 </td>
                 <td class="tariffs__value tariffs__value--included">
+                  <span class="tariffs__value-text">Розовый фильтр</span>
                   <span class="visually-hidden">Включено</span>
                 </td>
               </tr>
               <tr class="tariffs__item">
                 <td class="tariffs__field">Смайлики</td>
                 <td class="tariffs__value tariffs__value--not-included">
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve" fill="#f25b26">
-                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                  </svg>
+                  <span class="tariffs__value-text">Смайлики</span>
                   <span class="visually-hidden">Не включено</span>
                 </td>
                 <td class="tariffs__value tariffs__value--included">
+                  <span class="tariffs__value-text">Смайлики</span>
                   <span class="visually-hidden">Включено</span>
                 </td>
                 <td class="tariffs__value tariffs__value--included">
+                  <span class="tariffs__value-text">Смайлики</span>
                   <span class="visually-hidden">Включено</span>
                 </td>
               </tr>
               <tr class="tariffs__item">
                 <td class="tariffs__field">Комментарии</td>
                 <td class="tariffs__value tariffs__value--not-included">
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve" fill="#f25b26">
-                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                  </svg>
+                  <span class="tariffs__value-text">Комментарии</span>
                   <span class="visually-hidden">Не включено</span>
                 </td>
                 <td class="tariffs__value tariffs__value--not-included">
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve" fill="#f25b26">
-                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                  </svg>
+                  <span class="tariffs__value-text">Комментарии</span>
                   <span class="visually-hidden">Не включено</span>
                 </td>
                 <td class="tariffs__value tariffs__value--included">
+                  <span class="tariffs__value-text">Комментарии</span>
                   <span class="visually-hidden">Включено</span>
                 </td>
               </tr>
             </table>
-            <p class="tariffs__toggles">
-              <a class="tariffs__toggle">
-                <span class="visually-hidden">1</span>
-              </a>
-              <a class="tariffs__toggle">
-                <span class="visually-hidden">2</span>
-              </a>
-              <a class="tariffs__toggle">
-                <span class="visually-hidden">3</span>
-              </a>
-            </p>
           </div>
-        </div>
+          <p class="tariffs__toggles">
+            <a class="tariffs__toggle">
+              <span class="visually-hidden">1</span>
+            </a>
+            <a class="tariffs__toggle tariffs__toggle--active">
+              <span class="visually-hidden">2</span>
+            </a>
+            <a class="tariffs__toggle">
+              <span class="visually-hidden">3</span>
+            </a>
+          </p>
+        <!-- </div> -->
       </section>
       <section class="contacts">
         <div class="wrapper">
@@ -283,8 +285,11 @@
           </ul>
         </div>
         <div class="contacts__map">
+          <svg class="contacts__triangle" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve">
+            <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "/>
+          </svg>
           <iframe class="contacts__picture" src="https://yandex.ru/map-widget/v1/-/CCQDbS7N"></iframe>
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35.983px" height="35.983px" viewBox="0 0 35.983 35.983" enable-background="new 0 0 35.983 35.983" xml:space="preserve">
+          <svg class="contacts__marker" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35.983px" height="35.983px" viewBox="0 0 35.983 35.983" enable-background="new 0 0 35.983 35.983" xml:space="preserve">
             <circle fill="#FFFFFF" cx="17.991" cy="17.991" r="17.991"/>
             <circle fill="#D22856" cx="17.991" cy="17.991" r="7.866"/>
           </svg>
