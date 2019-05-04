@@ -165,6 +165,18 @@
 
     background-color: #dddfe0;
   }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+
+    position: absolute;
+    top: 70px;
+
+    width: 410px;
+    height: 1px;
+
+    background-color: #dddfe0;
+  }
 }
 
 .photo-loading__tool {
