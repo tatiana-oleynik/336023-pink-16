@@ -5,43 +5,40 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header page-header--internal">
       <div class="page-header__wrapper">
-        <div class="wrapper">
-          <div class="page-header__grid">
-            <a class="page-header__logo-link" href="index.html">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения 'Pink'" width="75" height="22">
-              </picture>
-            </a>
-            <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
-              <button class="main-nav__toggle" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-              </button>
-              <div class="main-nav__wrapper">
-                <ul class="main-nav__list">
-                  <li class="main-nav__item">
-                    <a class="main-nav__link" href="index.html">Главная</a>
-                  </li>
-                  <li class="main-nav__item">
-                    <a class="main-nav__link" href="photo.html">Фотографии</a>
-                  </li>
-                  <li class="main-nav__item main-nav__item--active">
-                    <a class="main-nav__link" href="form.html">Конкурс</a>
-                  </li>
-                  <li class="main-nav__item main-nav__item--last">
-                    <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
+        <div class="wrapper wrapper--header-grid">
+          <a class="page-header__logo-link" href="index.html">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения 'Pink'" width="75" height="22">
+            </picture>
+          </a>
+          <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="photo.html">Фотографии</a>
+                </li>
+                <li class="main-nav__item main-nav__item--active">
+                  <a class="main-nav__link" href="form.html">Конкурс</a>
+                </li>
+                <li class="main-nav__item main-nav__item--last">
+                  <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </div>
     </header>
@@ -73,35 +70,57 @@
               <input class="competition__field competition__field--patronymic" id="patronymic-user" type="text" name="patronymic" placeholder="Ну и отчество тоже">
             <p>
           </div>
-          <fieldset class="competition__progress progress">
+          <div class="competition__progress-color">
             <div class="wrapper">
-              <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
-              <label class="progress__signature">
-                <input class="progress__field" type="checkbox" name="progress" checked>
-                Сделал селфи с акулой
-              </label>
-              <label class="progress__signature">
-                <input class="progress__field" type="checkbox" name="progress" checked>
-                Обгорел на пляже
-              </label>
-              <label class="progress__signature">
-                <input class="progress__field" type="checkbox" name="progress">
-                Видел Чака Норриса
-              </label>
-              <label class="progress__signature">
-                <input class="progress__field" type="checkbox" name="progress">
-                Накупил сувениров
-              </label>
-              <label class="progress__signature">
-                <input class="progress__field" type="checkbox" name="progress" checked>
-                Удержал башню
-              </label>
-              <label class="progress__signature">
-                <input class="progress__field" type="checkbox" name="progress">
-                Разгромил отель
-              </label>
+              <fieldset class="competition__progress progress">
+                  <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
+                  <div class="progress__wrapper">
+                    <label class="progress__signature">
+                      <input class="progress__field" type="checkbox" name="progress" checked>
+                      <svg class="progress__checkbox-on" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                        <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                      </svg>
+                      Сделал селфи с акулой
+                    </label>
+                    <label class="progress__signature">
+                      <input class="progress__field" type="checkbox" name="progress" checked>
+                      <svg class="progress__checkbox-on" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                        <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                      </svg>
+                      Обгорел на пляже
+                    </label>
+                    <label class="progress__signature">
+                      <input class="progress__field" type="checkbox" name="progress">
+                      <svg class="progress__checkbox-on" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                        <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                      </svg>
+                      Видел Чака Норриса
+                    </label>
+                    <label class="progress__signature">
+                      <input class="progress__field" type="checkbox" name="progress">
+                      <svg class="progress__checkbox-on" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                        <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                      </svg>
+                      Накупил сувениров
+                    </label>
+                    <label class="progress__signature">
+                      <input class="progress__field" type="checkbox" name="progress" checked>
+                      <svg class="progress__checkbox-on" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                        <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                      </svg>
+                      Удержал башню
+                    </label>
+                    <label class="progress__signature">
+                      <input class="progress__field" type="checkbox" name="progress">
+                      <svg class="progress__checkbox-on" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                        <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                      </svg>
+                      Разгромил отель
+                    </label>
+                  </div>
+              </fieldset>
             </div>
-          </fieldset>
+          </div>
           <fieldset class="competition__contacts-user contacts-user">
             <ul class="contacts-user__list">
               <li class="contacts-user__item">

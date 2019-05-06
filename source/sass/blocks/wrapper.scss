@@ -1,0 +1,31 @@
+.wrapper {
+  max-width: 280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &--header-grid {
+    display: flex;
+    flex-direction: column;
+    min-height: 66px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 110px;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

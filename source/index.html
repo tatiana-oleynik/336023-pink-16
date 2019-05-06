@@ -5,43 +5,40 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header page-header--prime">
       <div class="page-header__wrapper">
-        <div class="wrapper">
-          <div class="page-header__grid">
-            <a class="page-header__logo-link">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения 'Pink'" width="75" height="22">
-              </picture>
-            </a>
-            <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
-              <button class="main-nav__toggle" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-              </button>
-              <div class="main-nav__wrapper">
-                <ul class="main-nav__list">
-                  <li class="main-nav__item main-nav__item--active">
-                    <a class="main-nav__link">Главная</a>
-                  </li>
-                  <li class="main-nav__item">
-                    <a class="main-nav__link" href="photo.html">Фотографии</a>
-                  </li>
-                  <li class="main-nav__item">
-                    <a class="main-nav__link" href="form.html">Конкурс</a>
-                  </li>
-                  <li class="main-nav__item main-nav__item--last">
-                    <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
+        <div class="wrapper wrapper--header-grid">
+          <a class="page-header__logo-link">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения 'Pink'" width="75" height="22">
+            </picture>
+          </a>
+          <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--active">
+                  <a class="main-nav__link">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="photo.html">Фотографии</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="form.html">Конкурс</a>
+                </li>
+                <li class="main-nav__item main-nav__item--last">
+                  <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </div>
     </header>
@@ -135,6 +132,14 @@
       </section>
       <section class="reviews">
         <div class="wrapper">
+          <svg class="reviews__quotes" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="78.672px" height="63.789px" viewBox="0 0 78.672 63.789" enable-background="new 0 0 78.672 63.789" xml:space="preserve">
+            <g>
+              <path d="M34.967,7.063L30.713,0C28.272,1.495,0,12.207,0,39.617c0,7.231,0.336,24.172,18.9,24.172 c11.187,0,13.94-10.279,13.94-13.584c0-21.977-21.382-14.177-21.382-14.177C11.458,17.957,31.263,9.184,34.967,7.063z"/>
+            </g>
+            <g>
+              <path d="M78.672,7.063L74.418,0c-2.44,1.495-30.713,12.207-30.713,39.617c0,7.231,0.337,24.172,18.9,24.172 c11.187,0,13.939-10.279,13.939-13.584c0-21.977-21.381-14.177-21.381-14.177C55.165,17.957,74.969,9.184,78.672,7.063z"/>
+            </g>
+          </svg>
           <a class="reviews__control-left" href="#">
             <span class="visually-hidden">Предыдущая страница</span>
             <svg class="reviews__arrow-left" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
@@ -185,86 +190,111 @@
         </div>
       </section>
       <section class="tariffs">
-        <!-- <div class="wrapper"> -->
-          <div class="tariffs__wrapper slider">
-            <table class="tariffs__list slider__list">
-              <tr class="tariffs__item">
-                <th class="tariffs__empty"></th>
-                <th class="tariffs__table-header">
-                  <p class="tariffs__denotation">База</p>
-                  <p class="tariffs__cost">1,99 usd</p>
-                </th>
-                <th class="tariffs__table-header">
-                  <p class="tariffs__denotation tariffs__denotation--hit">
-                    Стандарт
-                  <span>Хит</span>
-                  </p>
-                  <p class="tariffs__cost">3,99 usd</p>
-                </th>
-                <th class="tariffs__table-header">
-                  <p class="tariffs__denotation">Анлим</p>
-                  <p class="tariffs__cost">9,99 usd</p>
-                </th>
-              </tr>
-              <tr class="tariffs__item">
-                <td class="tariffs__field">Розовый фильтр</td>
-                <td class="tariffs__value tariffs__value--included">
-                  <span class="tariffs__value-text">Розовый фильтр</span>
-                  <span class="visually-hidden">Включено</span>
-                </td>
-                <td class="tariffs__value tariffs__value--included">
-                  <span class="tariffs__value-text">Розовый фильтр</span>
-                  <span class="visually-hidden">Включено</span>
-                </td>
-                <td class="tariffs__value tariffs__value--included">
-                  <span class="tariffs__value-text">Розовый фильтр</span>
-                  <span class="visually-hidden">Включено</span>
-                </td>
-              </tr>
-              <tr class="tariffs__item">
-                <td class="tariffs__field">Смайлики</td>
-                <td class="tariffs__value tariffs__value--not-included">
-                  <span class="tariffs__value-text">Смайлики</span>
-                  <span class="visually-hidden">Не включено</span>
-                </td>
-                <td class="tariffs__value tariffs__value--included">
-                  <span class="tariffs__value-text">Смайлики</span>
-                  <span class="visually-hidden">Включено</span>
-                </td>
-                <td class="tariffs__value tariffs__value--included">
-                  <span class="tariffs__value-text">Смайлики</span>
-                  <span class="visually-hidden">Включено</span>
-                </td>
-              </tr>
-              <tr class="tariffs__item">
-                <td class="tariffs__field">Комментарии</td>
-                <td class="tariffs__value tariffs__value--not-included">
-                  <span class="tariffs__value-text">Комментарии</span>
-                  <span class="visually-hidden">Не включено</span>
-                </td>
-                <td class="tariffs__value tariffs__value--not-included">
-                  <span class="tariffs__value-text">Комментарии</span>
-                  <span class="visually-hidden">Не включено</span>
-                </td>
-                <td class="tariffs__value tariffs__value--included">
-                  <span class="tariffs__value-text">Комментарии</span>
-                  <span class="visually-hidden">Включено</span>
-                </td>
-              </tr>
-            </table>
-          </div>
-          <p class="tariffs__toggles">
-            <a class="tariffs__toggle">
-              <span class="visually-hidden">1</span>
-            </a>
-            <a class="tariffs__toggle tariffs__toggle--active">
-              <span class="visually-hidden">2</span>
-            </a>
-            <a class="tariffs__toggle">
-              <span class="visually-hidden">3</span>
-            </a>
-          </p>
-        <!-- </div> -->
+        <div class="tariffs__wrapper slider">
+          <table class="tariffs__list slider__list">
+            <tr class="tariffs__item">
+              <th class="tariffs__empty"></th>
+              <th class="tariffs__table-header">
+                <p class="tariffs__denotation">База</p>
+                <p class="tariffs__cost">1,99 usd</p>
+              </th>
+              <th class="tariffs__table-header">
+                <p class="tariffs__denotation tariffs__denotation--hit">
+                  Стандарт
+                <span>Хит</span>
+                </p>
+                <p class="tariffs__cost">3,99 usd</p>
+              </th>
+              <th class="tariffs__table-header">
+                <p class="tariffs__denotation">Анлим</p>
+                <p class="tariffs__cost">9,99 usd</p>
+              </th>
+            </tr>
+            <tr class="tariffs__item">
+              <td class="tariffs__field tariffs__field--stroke tariffs__field--filter">Розовый фильтр</td>
+              <td class="tariffs__value tariffs__value--included">
+                <span class="tariffs__value-text">Розовый фильтр</span>
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+                <span class="visually-hidden">Включено</span>
+              </td>
+              <td class="tariffs__value tariffs__value--included">
+                <span class="tariffs__value-text">Розовый фильтр</span>
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+                <span class="visually-hidden">Включено</span>
+              </td>
+              <td class="tariffs__value tariffs__value--included">
+                <span class="tariffs__value-text">Розовый фильтр</span>
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+                <span class="visually-hidden">Включено</span>
+              </td>
+            </tr>
+            <tr class="tariffs__item tariffs__item--stroke">
+              <td class="tariffs__field">Смайлики</td>
+              <td class="tariffs__value tariffs__value--not-included">
+                <span class="tariffs__value-text">Смайлики</span>
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                </svg>
+                <span class="visually-hidden">Не включено</span>
+              </td>
+              <td class="tariffs__value tariffs__value--included">
+                <span class="tariffs__value-text">Смайлики</span>
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+                <span class="visually-hidden">Включено</span>
+              </td>
+              <td class="tariffs__value tariffs__value--included">
+                <span class="tariffs__value-text">Смайлики</span>
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+                <span class="visually-hidden">Включено</span>
+              </td>
+            </tr>
+            <tr class="tariffs__item tariffs__item--stroke">
+              <td class="tariffs__field">Комментарии</td>
+              <td class="tariffs__value tariffs__value--not-included">
+                <span class="tariffs__value-text">Комментарии</span>
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                </svg>
+                <span class="visually-hidden">Не включено</span>
+              </td>
+              <td class="tariffs__value tariffs__value--not-included">
+                <span class="tariffs__value-text">Комментарии</span>
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                </svg>
+                <span class="visually-hidden">Не включено</span>
+              </td>
+              <td class="tariffs__value tariffs__value--included">
+                <span class="tariffs__value-text">Комментарии</span>
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+                <span class="visually-hidden">Включено</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="tariffs__toggles">
+          <a class="tariffs__toggle">
+            <span class="visually-hidden">1</span>
+          </a>
+          <a class="tariffs__toggle tariffs__toggle--active">
+            <span class="visually-hidden">2</span>
+          </a>
+          <a class="tariffs__toggle">
+            <span class="visually-hidden">3</span>
+          </a>
+        </p>
       </section>
       <section class="contacts">
         <div class="wrapper">

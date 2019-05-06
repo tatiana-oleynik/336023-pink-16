@@ -81,9 +81,7 @@
     position: relative;
   }
 
-  .reviews::before {
-    content: "";
-
+  .reviews__quotes {
     position: absolute;
     top: 70px;
     left: 550px;
@@ -91,7 +89,7 @@
     width: 79px;
     height: 64px;
 
-    background-image: url("../img/icon-quotes.svg");
+    fill: #efefef;
   }
 }
 
