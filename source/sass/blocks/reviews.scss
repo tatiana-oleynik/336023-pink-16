@@ -76,6 +76,10 @@
   }
 }
 
+.reviews__quotes {
+  display: none;
+}
+
 @media (min-width: $desktop-width) {
   .reviews {
     position: relative;
@@ -84,7 +88,9 @@
   .reviews__quotes {
     position: absolute;
     top: 70px;
-    left: 550px;
+    left: 50%;
+
+    display: block;
 
     width: 79px;
     height: 64px;
