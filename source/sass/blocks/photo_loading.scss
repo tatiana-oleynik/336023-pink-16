@@ -1,0 +1,339 @@
+.photo-loading__title {
+  @include indents;
+  margin-bottom: 49px;
+  padding-top: 28px;
+}
+
+.photo-loading__form {
+  background-color: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
+.photo-loading__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+
+    width: 300px;
+  }
+}
+
+.photo-loading__wrapper-button {
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.photo-loading__button {
+  min-width: 280px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-align: center;
+
+  background-color: #f2f2f2;
+  border-radius: 30px;
+
+  &--post {
+    margin-bottom: 12px;
+
+    color: #d22856;
+
+    border: 3px solid #d22856;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 23px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 185px;
+      margin-bottom: 0;
+      margin-right: 42px;
+    }
+  }
+
+  &--cancellation {
+    color: #e3e4e4;
+
+    border: 3px solid #e3e4e4;
+
+    @media (min-width: $desktop-width) {
+      min-width: 185px;
+    }
+  }
+}
+
+.photo-loading__fill-form {
+  background-color: #f2f2f2;
+}
+
+.photo-loading__picture {
+  margin-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 401px;
+    margin-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    margin-right: 91px;
+  }
+}
+
+.photo-loading__list {
+  @include indents;
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 100px;
+
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+
+    margin-bottom: 30px;
+    padding-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.photo-loading__item {
+  @include indents;
+  position: relative;
+
+  margin-right: 31px;
+
+  &--last {
+    margin-right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+
+    padding-left: 28px;
+  }
+}
+
+.photo-loading__item--active::after {
+  content: "";
+
+  position: absolute;
+  top: 120px;
+  left: -68px;
+
+  width: 320px;
+  height: 1px;
+
+  background-color: #dddfe0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.photo-loading__item::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+
+    position: absolute;
+    top: 50px;
+
+    width: 277px;
+    height: 1px;
+
+    background-color: #dddfe0;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+
+    position: absolute;
+    top: 70px;
+
+    width: 410px;
+    height: 1px;
+
+    background-color: #dddfe0;
+  }
+}
+
+.photo-loading__tool {
+  @include indents;
+
+  border: none;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 29px;
+    margin-bottom: 50px;
+  }
+}
+
+.photo-loading__tool svg,
+.photo-loading__contrast path {
+  fill: #b5b9be;
+
+  @media (min-width: $tablet-width) {
+    fill: #d22856;
+  }
+}
+
+.photo-loading__tool--active svg {
+  fill: #d22856;
+}
+
+.photo-loading__crop {
+  width: 44px;
+  height: 44px;
+
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.photo-loading__fill {
+  width: 48px;
+  height: 43px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 43px;
+  }
+}
+
+.photo-loading__contrast {
+  width: 32px;
+  height: 32px;
+  padding-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.photo-loading__range {
+  @include indents;
+  position: absolute;
+  top: 23px;
+  left: 160px;
+
+  width: 15px;
+  height: 15px;
+
+  background-color: #f2f2f2;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 3px;
+
+    &--crop {
+      left: 210px;
+    }
+
+    &--fill {
+      left: 90px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 13px;
+
+    &--crop {
+      left: 160px;
+    }
+
+    &--fill {
+      left: 310px;
+    }
+
+    &--contrast {
+      left: 250px;
+    }
+  }
+}
+
+.photo-loading__strip {
+  position: absolute;
+  top: 30px;
+  left: -25px;
+
+  display: block;
+
+  width: 241px;
+  height: 2px;
+
+  background-color: #283645;
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    left: 60px;
+
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+    left: 80px;
+
+    width: 289px;
+  }
+}
+
+.photo-loading__tools-range {
+  @include indents;
+  position: absolute;
+
+  display: none;
+
+  &--active {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.photo-loading__tools-range-wrapper {
+  position: relative;
+}

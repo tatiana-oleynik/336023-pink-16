@@ -1,0 +1,85 @@
+.progress {
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid #e5e5e5;
+  }
+}
+
+.progress__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.progress__title {
+  width: 218px;
+  margin-bottom: 37px;
+  padding-top: 40px;
+  margin-left: 20px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #d22856;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 438px;
+    padding-top: 0;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    line-height: 30px;
+  }
+}
+
+.progress__signature {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 42px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #283645;
+}
+
+.progress__signature::before {
+  content: "";
+
+  position: absolute;
+
+  width: 35px;
+  height: 35px;
+
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.progress__signature svg {
+  position: absolute;
+  left: 8px;
+  display: none;
+
+  width: 22px;
+  height: 16px;
+
+  fill: #e06989;
+}
+
+input[type="checkbox"]:checked ~ .progress__checkbox-on {
+  display: block;
+}
+
+.progress__field {
+  width: 35px;
+  height: 35px;
+  margin-right: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 58px;
+  }
+}
