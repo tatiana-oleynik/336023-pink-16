@@ -26,3 +26,12 @@ input[type="radio"].visually-hidden {
 
   overflow: hidden;
 }
+
+input[type="text"]::placeholder {
+  padding-left: 21px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #283645;
+}
