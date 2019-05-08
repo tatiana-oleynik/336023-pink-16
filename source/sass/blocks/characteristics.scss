@@ -370,7 +370,18 @@
     top: 50px;
     left: 10px;
 
+    width: 238px;
+    height: 276px;
+
     fill: #dedede;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+    left: -5px;
+
+    width: 298px;
+    height: 345px;
   }
 }
 
@@ -411,6 +422,14 @@
 
     border: 15px solid #d22856;
     border-radius: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -40px;
+    left: -55px;
+
+    width: 200px;
+    height: 200px;
   }
 }
 
