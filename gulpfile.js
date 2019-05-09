@@ -17,15 +17,15 @@ var del = require("del");
 var server = require("browser-sync").create();
 
 gulp.task("clean", function () {
- return del("build");
+  return del("build");
 });
 
 gulp.task("copy", function () {
- return gulp.src([
- "source/css/**",
- "source/fonts/**/*.{woff,woff2}",
- "source/img/**",
- "source/js/**"
+  return gulp.src([
+    "source/css/**",
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
+    "source/js/**"
  ], {
  base: "source"
  })
@@ -92,17 +92,17 @@ gulp.task("images", function () {
 });
 
 gulp.task("webp", function () {
- return gulp.src("source/img/**/*.{png,jpg}")
- .pipe(webp({quality: 90}))
- .pipe(gulp.dest("source/img"));
+  return gulp.src("source/img/**/*.{png,jpg}")
+  .pipe(webp({quality: 90}))
+  .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("build", gulp.series(
- "clean",
- "copy",
- "css",
- "sprite",
- "html"
+  "clean",
+  "copy",
+  "css",
+  "sprite",
+  "html"
 ));
 
 gulp.task("start", gulp.series("build", "server"));
