@@ -35,3 +35,7 @@ input[type="text"]::placeholder {
   font-weight: normal;
   color: #283645;
 }
+
+input[type="checkbox"]:checked ~ .progress__checkbox-on {
+  display: block;
+}

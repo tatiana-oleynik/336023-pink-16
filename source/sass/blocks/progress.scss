@@ -70,16 +70,7 @@
   fill: #e06989;
 }
 
-input[type="checkbox"]:checked ~ .progress__checkbox-on {
-  display: block;
-}
-
 .progress__field {
   width: 35px;
   height: 35px;
-  margin-right: 16px;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 58px;
-  }
 }
