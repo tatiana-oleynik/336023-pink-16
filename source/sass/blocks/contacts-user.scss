@@ -13,8 +13,8 @@
 }
 
 .contacts-user__list {
-  position: relative;
   @include indents;
+  position: relative;
   list-style: none;
 }
 
