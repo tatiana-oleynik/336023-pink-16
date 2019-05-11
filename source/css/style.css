@@ -432,6 +432,9 @@ input[type="text"]::placeholder {
   font-weight: normal;
   color: #283645; }
 
+input[type="checkbox"]:checked ~ .progress__checkbox-on {
+  display: block; }
+
 .wrapper {
   max-width: 280px;
   margin: 0 auto;
@@ -2669,15 +2672,8 @@ input[type="text"]::placeholder {
   height: 16px;
   fill: #e06989; }
 
-input[type="checkbox"]:checked ~ .progress__checkbox-on {
-  display: block; }
-
 .progress__field {
   width: 35px;
-  height: 35px;
-  margin-right: 16px; }
-  @media (min-width: 660px) {
-    .progress__field {
-      margin-left: 58px; } }
+  height: 35px; }
 
 /*# sourceMappingURL=style.css.map */

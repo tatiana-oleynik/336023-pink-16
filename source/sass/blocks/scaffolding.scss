@@ -27,7 +27,9 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-input[type="text"]::placeholder {
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="email"]::placeholder {
   padding-left: 21px;
 
   font-size: 18px;
