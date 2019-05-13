@@ -41,12 +41,17 @@
 
   display: flex;
   align-items: center;
+
   margin-bottom: 42px;
 
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
   color: #283645;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 58px;
+  }
 }
 
 .progress__signature::before {
@@ -73,6 +78,10 @@
 }
 
 .progress__field {
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
+}
+
+.progress__signature span {
+  padding-left: 59px;
 }

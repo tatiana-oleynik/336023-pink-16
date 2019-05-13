@@ -5,7 +5,7 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <div style="display:none">
@@ -76,69 +76,81 @@
           <div class="competition__progress-color">
             <div class="wrapper">
               <fieldset class="competition__progress progress">
-                  <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
-                  <div class="progress__wrapper">
-                    <label class="progress__signature">
-                      <input class="progress__field" type="checkbox" name="progress" checked="">
-                      <svg class="progress__checkbox-on" width="22" height="16"><use xlink:href="#icon-checkbox-on"></use></svg>
-                      Сделал селфи с акулой
-                    </label>
-                    <label class="progress__signature">
-                      <input class="progress__field" type="checkbox" name="progress" checked="">
-                      <svg class="progress__checkbox-on" width="22" height="16"><use xlink:href="#icon-checkbox-on"></use></svg>
-                      Обгорел на пляже
-                    </label>
-                    <label class="progress__signature">
-                      <input class="progress__field" type="checkbox" name="progress">
-                      <svg class="progress__checkbox-on" width="22" height="16"><use xlink:href="#icon-checkbox-on"></use></svg>
-                      Видел Чака Норриса
-                    </label>
-                    <label class="progress__signature">
-                      <input class="progress__field" type="checkbox" name="progress">
-                      <svg class="progress__checkbox-on" width="22" height="16"><use xlink:href="#icon-checkbox-on"></use></svg>
-                      Накупил сувениров
-                    </label>
-                    <label class="progress__signature">
-                      <input class="progress__field" type="checkbox" name="progress" checked="">
-                      <svg class="progress__checkbox-on" width="22" height="16"><use xlink:href="#icon-checkbox-on"></use></svg>
-                      Удержал башню
-                    </label>
-                    <label class="progress__signature">
-                      <input class="progress__field" type="checkbox" name="progress">
-                      <svg class="progress__checkbox-on" width="22" height="16"><use xlink:href="#icon-checkbox-on"></use></svg>
-                      Разгромил отель
-                    </label>
-                  </div>
+                <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
+                <div class="progress__wrapper">
+                  <label class="progress__signature">
+                    <input class="progress__field visually-hidden" type="checkbox" name="progress" checked="">
+                    <svg class="progress__checkbox-on" width="22" height="16"><use xlink:href="#icon-yes"></use></svg>
+                    <span>Сделал селфи с акулой</span>
+                  </label>
+                  <label class="progress__signature">
+                    <input class="progress__field visually-hidden" type="checkbox" name="progress" checked="">
+                    <svg class="progress__checkbox-on" width="22" height="16"><use xlink:href="#icon-yes"></use></svg>
+                    <span>Обгорел на пляже</span>
+                  </label>
+                  <label class="progress__signature">
+                    <input class="progress__field visually-hidden" type="checkbox" name="progress">
+                    <svg class="progress__checkbox-on" width="22" height="16"><use xlink:href="#icon-yes"></use></svg>
+                    <span>Видел Чака Норриса</span>
+                  </label>
+                  <label class="progress__signature">
+                    <input class="progress__field visually-hidden" type="checkbox" name="progress">
+                    <svg class="progress__checkbox-on" width="22" height="16"><use xlink:href="#icon-yes"></use></svg>
+                    <span>Накупил сувениров</span>
+                  </label>
+                  <label class="progress__signature">
+                    <input class="progress__field visually-hidden" type="checkbox" name="progress" checked="">
+                    <svg class="progress__checkbox-on" width="22" height="16"><use xlink:href="#icon-yes"></use></svg>
+                    <span>Удержал башню</span>
+                  </label>
+                  <label class="progress__signature">
+                    <input class="progress__field visually-hidden" type="checkbox" name="progress">
+                    <svg class="progress__checkbox-on" width="22" height="16"><use xlink:href="#icon-yes"></use></svg>
+                    <span>Разгромил отель</span>
+                  </label>
+                </div>
               </fieldset>
             </div>
           </div>
-          <fieldset class="competition__contacts-user contacts-user">
-            <ul class="contacts-user__list">
-              <li class="contacts-user__item">
-                <label class="contacts-user__signature subject" for="tel-user">Номер телефона</label>
-                <input class="contacts-user__field" id="tel-user" type="tel" name="telephone" placeholder="Номер, пожалуйста">
-              </li>
-              <li class="contacts-user__item">
-                <label class="contacts-user__signature subject" for="email-user">Адрес почты</label>
-                <input class="contacts-user__field" id="email-user" type="email" name="email" placeholder="Введите почту*">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="competition__attachment attachment">
-            <legend class="attachment__title subject">С каким приложением путешествовали?</legend>
-            <label class="attachment__signature">
-              <input class="attachment__field" type="radio" name="attachment" value="Pink для iOS" checked="">
-              Pink для iOS
-            </label>
-            <label class="attachment__signature">
-              <input class="attachment__field" type="radio" name="attachment" value="Pink на Android">
-              Pink на Android
-            </label>
-            <label class="attachment__signature">
-              <input class="attachment__field" type="radio" name="attachment" value="Windows Phone">
-              Windows Phone
-            </label>
-          </fieldset>
+          <div class="wrapper">
+            <fieldset class="competition__contacts-user contacts-user">
+              <legend class="contacts-user__title">Контактная информация</legend>
+              <ul class="contacts-user__list">
+                <li class="contacts-user__item contacts-user__item--top">
+                  <label class="contacts-user__signature" for="tel-user">Номер телефона</label>
+                  <input class="contacts-user__field" id="tel-user" type="tel" name="telephone" placeholder="Номер, пожалуйста">
+                  <svg  class="contacts-user__tel"width="20" height="19"><use xlink:href="#icon-phone"></use></svg>
+                </li>
+                <li class="contacts-user__item">
+                  <label class="contacts-user__signature" for="email-user">Адрес почты</label>
+                  <input class="contacts-user__field" id="email-user" type="email" name="email" placeholder="Введите почту*">
+                  <svg class="contacts-user__mail" width="20" height="19"><use xlink:href="#icon-mail"></use></svg>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="competition__attachment--wrapper">
+            <div class="wrapper">
+              <fieldset class="competition__attachment attachment">
+                <legend class="attachment__title">С каким приложением путешествовали?</legend>
+                <label class="attachment__signature">
+                  <input class="attachment__field visually-hidden" type="radio" name="attachment" value="Pink для iOS" checked="">
+                  <span class="attachment__circle"></span>
+                  <span>Pink для iOS</span>
+                </label>
+                <label class="attachment__signature">
+                  <input class="attachment__field visually-hidden" type="radio" name="attachment" value="Pink на Android">
+                  <span class="attachment__circle"></span>
+                  <span>Pink на Android</span>
+                </label>
+                <label class="attachment__signature">
+                  <input class="attachment__field visually-hidden" type="radio" name="attachment" value="Windows Phone">
+                  <span class="attachment__circle"></span>
+                  <span>Windows Phone</span>
+                </label>
+              </fieldset>
+            </div>
+          </div>
           <fieldset class="competition__impressions impressions">
             <legend class="impressions__title subject">Опишите свои эмоции</legend>
             <textarea class="impressions__text" name="impressions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -191,7 +203,7 @@
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">Логотип HTML Academy</span>
-            <svg width="27" height="34"><use xlink:href="#icon-htmlacademy"></use></svg>
+            <svg width="27" height="34"><use xlink:href="#logo-htmlacademy"></use></svg>
           </a>
         </div>
       </footer>

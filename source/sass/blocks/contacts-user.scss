@@ -21,6 +21,7 @@
 .contacts-user__signature {
   @include indents;
   padding-left: 22px;
+  margin-bottom: 10px;
 
   font-size: 14px;
   line-height: 30px;
@@ -80,8 +81,24 @@
   display: none;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: 10;
+    right: 80px;
+
     display: block;
     fill: #d22856;
+  }
+}
+
+.contacts-user__mail {
+  @media (min-width: $tablet-width) {
+    top: 170px;
+  }
+}
+
+.contacts-user__tel {
+  @media (min-width: $tablet-width) {
+    top: 20px;
   }
 }
 
