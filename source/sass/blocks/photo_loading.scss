@@ -57,6 +57,16 @@
 
     border: 3px solid #d22856;
 
+    &:hover {
+      color: #ffffff;
+      background-color: #d22856;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #d22856;
+    }
+
     @media (min-width: $tablet-width) {
       margin-bottom: 23px;
     }
@@ -72,6 +82,17 @@
     color: #e3e4e4;
 
     border: 3px solid #e3e4e4;
+
+    &:hover {
+      color: rgba(40, 54, 69, 0.3);
+      border-color: rgba(40, 54, 69, 0.3);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(40, 54, 69, 0.3);
+      border: none;
+    }
 
     @media (min-width: $desktop-width) {
       min-width: 185px;
@@ -263,6 +284,10 @@
   border: 2px solid #d22856;
   border-radius: 50%;
 
+  &:active {
+    background-color: #d22856;
+  }
+
   @media (min-width: $tablet-width) {
     top: 3px;
 
@@ -336,4 +361,10 @@
 
 .photo-loading__tools-range-wrapper {
   position: relative;
+}
+
+.photo-loading__contrast:hover,
+.photo-loading__fill:hover,
+.photo-loading__crop:hover {
+  fill: rgba(40, 54, 69, 0.5);
 }

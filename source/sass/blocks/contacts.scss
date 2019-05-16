@@ -1,3 +1,11 @@
+.contacts-user {
+  @include indents;
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
 .contacts__list {
   @include indents;
   list-style: none;
@@ -90,6 +98,41 @@
   &--address {
     font-style: normal;
   }
+
+  &--mail {
+    position: relative;
+  }
+
+  &--mail:hover {
+    color: #283645;
+  }
+
+  &--mail:active {
+    color: rgba(40, 54, 69, 0.3);
+  }
+}
+
+.contacts__details--mail::after {
+  content: "";
+
+  position: absolute;
+  left: 32px;
+  top: 32px;
+
+  width: 238px;
+  height: 2px;
+
+  background-color: #283645;
+
+  display: none;
+}
+
+.contacts__details--mail:hover::after {
+  display: inline-block;
+}
+
+.contacts__details--mail:active::after {
+  display: none;
 }
 
 .contacts__map {
@@ -179,4 +222,12 @@
   top: 0;
   width: 100%;
   height: auto;
+}
+
+.contacts-user__field:hover {
+  border-color: #283645;
+}
+
+.contacts-user__field:active {
+  border-color: #d22856;
 }

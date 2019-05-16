@@ -1,3 +1,15 @@
+.competition__form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .competition__info {
   @include indents;
   padding-top: 56px;
@@ -69,9 +81,35 @@
       min-width: 516px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--surname {
+      min-width: 338px;
+    }
+
+    &--name {
+      min-width: 380px;
+    }
+
+    &--patronymic {
+      min-width: 338px;
+    }
+  }
+}
+
+.competition__field:hover {
+  border-color: #283645;
+}
+
+.competition__field:active {
+  border-color: #d22856;
 }
 
 .competition__item {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+
   &--last {
     margin-bottom: 42px;
 
@@ -87,5 +125,61 @@
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
+  }
+}
+
+.competition__attachment--wrapper {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.competition__progress-color {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+}
+
+.competition__footnote {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: #283645;
+}
+
+.competition__star {
+  color: #d22856;
+}
+
+.competition__grid {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.competition__full-name {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include indents;
+    width: 445px;
+    margin-right: 63px;
+  }
+}
+
+.competition__contacts {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.competition__impressions-wrapper {
+  @media (min-width: $tablet-width) {
+    order: 5;
   }
 }

@@ -1,16 +1,29 @@
 .progress {
+  @include indents;
   border: none;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
 
-    border: 1px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
   }
 }
 
 .progress__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 940px;
+    margin-left: 58px;
+  }
 }
 
 .progress__title {
@@ -52,6 +65,38 @@
   @media (min-width: $tablet-width) {
     margin-left: 58px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 260px;
+    margin-left: 0;
+    margin-right: 50px;
+
+    &--shark {
+      order: 1;
+    }
+
+    &--chuck {
+      order: 2;
+    }
+
+    &--tower {
+      order: 3;
+      margin-right: 0;
+    }
+
+    &--beach {
+      order: 4;
+    }
+
+    &--souvenir {
+      order: 5;
+    }
+
+    &--hotel {
+      order: 6;
+      margin-right: 0;
+    }
+  }
 }
 
 .progress__signature::before {
@@ -64,6 +109,14 @@
 
   border: 2px solid #e5e5e5;
   background-color: #ffffff;
+}
+
+.progress__signature:hover::before {
+  border-color: #283645;
+}
+
+.progress__signature:active::before {
+  border-color: #d22856;
 }
 
 .progress__signature svg {

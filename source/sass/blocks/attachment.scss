@@ -1,13 +1,15 @@
 .attachment {
+  @include indents;
   display: flex;
   flex-direction: column;
 
   padding-bottom: 40px;
+  margin-bottom: 40px;
 
   border: none;
 
   @media (min-width: $tablet-width) {
-    border: 1px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
   }
 }
 
@@ -28,6 +30,10 @@
     padding-left: 24px;
     padding-right: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
+  }
 }
 
 .attachment__signature {
@@ -41,6 +47,14 @@
   line-height: 30px;
   font-weight: normal;
   color: #283645;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 37px;
+  }
 }
 
 .attachment__field {
@@ -62,6 +76,14 @@
   background-color: #ffffff;
 }
 
+.attachment__signature:hover::after {
+  border-color: #283645;
+}
+
+.attachment__signature:active::after {
+  border-color: #d22856;
+}
+
 .attachment__circle {
   position: absolute;
   z-index: 10;
@@ -77,6 +99,6 @@
   background-color: #d22856;
 }
 
-.attachment__signature span {
-  // padding-left: 63px;
+.attachment__text {
+  padding-left: 63px;
 }

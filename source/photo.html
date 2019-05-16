@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link href="css/style.min.css" rel="stylesheet">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <div style="display:none">
@@ -15,11 +19,9 @@
       <div class="page-header__wrapper">
         <div class="wrapper wrapper--header-grid">
           <a class="page-header__logo-link" href="index.html">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения 'Pink'" width="75" height="22">
-            </picture>
+            <svg class="page-header__logo-pink-white-mobile" width="75" height="22"><use xlink:href="#logo-pink-white-mobile"></use></svg>
+            <svg class="page-header__logo-pink-white-tablet" width="147" height="40"><use xlink:href="#logo-pink-white-tablet"></use></svg>
+            <svg class="page-header__logo-pink-white-desktop" width="147" height="40"><use xlink:href="#logo-pink-white-desktop"></use></svg>
           </a>
           <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
             <button class="main-nav__toggle" type="button">
@@ -31,7 +33,7 @@
                   <a class="main-nav__link" href="index.html">Главная</a>
                 </li>
                 <li class="main-nav__item main-nav__item--active">
-                  <a class="main-nav__link" href="photo.html">Фотографии</a>
+                  <a class="main-nav__link main-nav__link--active" href="photo.html">Фотографии</a>
                 </li>
                 <li class="main-nav__item">
                   <a class="main-nav__link" href="form.html">Конкурс</a>
@@ -286,10 +288,8 @@
     <div class="wrapper">
       <footer class="page-footer">
         <a class="page-footer__logo-link" href="index.html">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
-            <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения Pink" width="147" height="40">
-          </picture>
+          <svg class="page-header__logo-pink-blue-mobile" width="147" height="40"><use xlink:href="#logo-pink-blue-mobile"></use></svg>
+          <svg class="page-header__logo-pink-blue-desktop" width="147" height="40"><use xlink:href="#logo-pink-blue-desktop"></use></svg>
         </a>
 
         <ul class="page-footer__social social-list">

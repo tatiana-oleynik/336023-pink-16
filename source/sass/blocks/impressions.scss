@@ -1,0 +1,59 @@
+.impressions {
+  @include indents;
+  margin-bottom: 48px;
+
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid #e5e5e5;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.impressions__title {
+  margin-bottom: 19px;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: #d22856;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+}
+
+.impressions__area {
+  width: 280px;
+  min-height: 198px;
+  resize: none;
+
+  border: 2px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    width: 496px;
+    min-height: 193px;
+    margin-left: 58px;
+    margin-right: 58px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 820px;
+  }
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: #d22856;
+  }
+}

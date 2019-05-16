@@ -50,7 +50,7 @@
   width: 50px;
   height: 24px;
 
-  background-image: url("../img/icon-menu-burger.svg");
+  background-image: url("../img/sprite/icon-menu-burger.svg");
   background-repeat: no-repeat;
 }
 
@@ -64,7 +64,7 @@
   width: 24px;
   height: 23px;
 
-  background-image: url("../img/icon-menu-cross.svg");
+  background-image: url("../img/sprite/icon-menu-cross.svg");
 
   @media (min-width: $tablet-width) {
     right: -10px;
@@ -196,5 +196,26 @@
     line-height: 18px;
     font-weight: normal;
     text-transform: capitalize;
+  }
+
+  &--active {
+    padding-bottom: 11px;
+    border-bottom: 2px solid #ffffff;
+  }
+
+  &--active:hover {
+    border-color: #d22856;
+  }
+
+  &--active:active {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
