@@ -47,12 +47,17 @@
   }
 }
 
+.page-footer__logo-link svg {
+  fill: #283645;
+}
+
 .page-footer__logo-link svg:hover {
   fill: #d22856;
 }
 
 .page-footer__logo-link svg:active {
-  fill: rgba(255, 255, 255, 0.3);
+  opacity: 0.3;
+  fill: #283645;
 }
 
 .page-footer__copyright {

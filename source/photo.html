@@ -15,36 +15,40 @@
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <header class="page-header page-header--internal">
+    <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="wrapper wrapper--header-grid">
-          <a class="page-header__logo-link" href="index.html">
-            <svg class="page-header__logo-pink-white-mobile" width="75" height="22"><use xlink:href="#logo-pink-white-mobile"></use></svg>
-            <svg class="page-header__logo-pink-white-tablet" width="147" height="40"><use xlink:href="#logo-pink-white-tablet"></use></svg>
-            <svg class="page-header__logo-pink-white-desktop" width="147" height="40"><use xlink:href="#logo-pink-white-desktop"></use></svg>
-          </a>
+        <div class="page-header__wrapper-top">
+          <div class="page-header__logo-wrapper">
+            <a class="page-header__logo-link">
+              <svg class="page-header__logo-pink-white-mobile" width="75" height="22"><use xlink:href="#logo-pink-white-mobile"></use></svg>
+              <svg class="page-header__logo-pink-white-tablet" width="147" height="40"><use xlink:href="#logo-pink-white-tablet"></use></svg>
+              <svg class="page-header__logo-pink-white-desktop" width="147" height="40"><use xlink:href="#logo-pink-white-desktop"></use></svg>
+            </a>
+          </div>
           <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
             <button class="main-nav__toggle" type="button">
+              <svg class="main-nav__icon-burger" width="50" height="24"><use xlink:href="#icon-menu-burger"></use></svg>
+              <svg class="main-nav__icon-cross" width="24" height="23"><use xlink:href="#icon-menu-cross"></use></svg>
               <span class="visually-hidden">Открыть меню</span>
             </button>
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list">
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="index.html">Главная</a>
-                </li>
-                <li class="main-nav__item main-nav__item--active">
-                  <a class="main-nav__link main-nav__link--active" href="photo.html">Фотографии</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="form.html">Конкурс</a>
-                </li>
-                <li class="main-nav__item main-nav__item--last">
-                  <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-                </li>
-              </ul>
-            </div>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
+                <a class="main-nav__link main-nav__link--active" href="photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item main-nav__item--last">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              </li>
+            </ul>
           </nav>
         </div>
+      </div>
+      <div class="page-header__pictire page-header__pictire--internal">
       </div>
     </header>
     <main class="page-main">

@@ -16,9 +16,9 @@
 
 .main-nav__toggle {
   position: absolute;
+  z-index: 10;
   right: -5px;
-  top: -45px;
-  z-index: 2;
+  top: -50px;
 
   display: block;
   width: 50px;
@@ -29,10 +29,7 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    right: 30px;
-    top: -70px;
-
-    margin-right: 0.1%;
+    right: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,36 +37,24 @@
   }
 }
 
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-
-  position: absolute;
-  right: 1px;
-  top: 2px;
-
-  width: 50px;
-  height: 24px;
-
-  background-image: url("../img/sprite/icon-menu-burger.svg");
-  background-repeat: no-repeat;
+.main-nav--closed .main-nav__icon-cross {
+  display: none;
 }
 
-.main-nav--opened .main-nav__toggle::after {
-  content: "";
+.main-nav--opened .main-nav__icon-burger {
+  display: none;
+}
 
-  position: absolute;
-  right: 5px;
-  top: -1px;
+.main-nav__toggle svg {
+  fill: #ffffff;
+}
 
-  width: 24px;
-  height: 23px;
+.main-nav__toggle svg:hover {
+  fill: #d22856;
+}
 
-  background-image: url("../img/sprite/icon-menu-cross.svg");
-
-  @media (min-width: $tablet-width) {
-    right: -10px;
-    top: 8px;
-  }
+.main-nav__toggle svg:active {
+  fill: rgba(210, 40, 86, 0.3);
 }
 
 @media (max-width: $width-tablet-mobile) {
@@ -115,16 +100,13 @@
   content: "";
 
   position: absolute;
+  z-index: 10;
   right: 1px;
 
   width: 100%;
   height: 1px;
 
   background-color: #000000;
-
-  @media (min-width: $tablet-width) {
-    height: 2px;
-  }
 }
 
 .main-nav__item {
@@ -199,16 +181,22 @@
   }
 
   &--active {
-    padding-bottom: 11px;
-    border-bottom: 2px solid #ffffff;
+    @media (min-width: $desktop-width) {
+      padding-bottom: 11px;
+      border-bottom: 2px solid #ffffff;
+    }
   }
 
   &--active:hover {
-    border-color: #d22856;
+    @media (min-width: $desktop-width) {
+      border-color: #d22856;
+    }
   }
 
   &--active:active {
-    border-color: rgba(255, 255, 255, 0.3);
+    @media (min-width: $desktop-width) {
+      border-color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   &:hover {
@@ -216,6 +204,10 @@
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(210, 40, 86, 0.3);
+
+    @media (min-width: $desktop-width) {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
