@@ -1,16 +1,62 @@
 .page-header {
-  background-color: #283645;
-}
-
-.page-header__pictire--prime {
   position: relative;
+  min-height: 463px;
+
+  background-color: #283645;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 100% auto;
+  }
+
+  &--internal {
+    min-height: 239px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 728px;
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: -270px;
+    background-size: 1200px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-position: -270px;
+      background-size: 1200px auto;
+    }
+
+    &--internal {
+      min-height: 441px;
+      background-position: top;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 853px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: -720px;
+    background-size: auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+
+    &--internal {
+      min-height: 392px;
+      background-position: top;
+    }
+  }
 }
 
-.page-header__pictire--prime::before {
+.page-header--prime::before {
   content: "";
 
   position: absolute;
-  top: 110px;
+  top: 177px;
 
   width: 260px;
   height: 287px;
@@ -24,8 +70,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    top: 177px;
     left: -20px;
-    top: 70px;
 
     width: 665px;
     height: 550px;
@@ -39,7 +85,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 93px;
+    top: 203px;
     left: 140px;
 
     width: 890px;
@@ -138,58 +184,6 @@
     height: 40px;
     padding-top: 26px;
     margin-left: 0;
-  }
-}
-
-.page-header__pictire {
-  height: 397px;
-
-  background-color: #283645;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 0 -68px;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 100% auto;
-  }
-
-  &--internal {
-    height: 172px;
-  }
-
-  @media (min-width: $tablet-width) {
-    height: 619px;
-
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: -270px -112px;
-    background-size: 1200px auto;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-position: -270px -112px;
-      background-size: 1200px auto;
-    }
-
-    &--internal {
-      height: 332px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 744px;
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: -720px -100px;
-    background-size: auto;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-    }
-
-    &--internal {
-      height: 286px;
-    }
   }
 }
 
