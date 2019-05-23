@@ -1,14 +1,29 @@
 .progress {
+  @include indents;
   border: none;
 
   @media (min-width: $tablet-width) {
-    border: 1px solid #e5e5e5;
+    margin-bottom: 57px;
+
+    border: 2px solid #e5e5e5;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
   }
 }
 
 .progress__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 940px;
+    margin-left: 58px;
+  }
 }
 
 .progress__title {
@@ -39,12 +54,49 @@
 
   display: flex;
   align-items: center;
+
   margin-bottom: 42px;
 
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
   color: #283645;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 260px;
+    margin-left: 0;
+    margin-right: 50px;
+
+    &--shark {
+      order: 1;
+    }
+
+    &--chuck {
+      order: 2;
+    }
+
+    &--tower {
+      order: 3;
+      margin-right: 0;
+    }
+
+    &--beach {
+      order: 4;
+    }
+
+    &--souvenir {
+      order: 5;
+    }
+
+    &--hotel {
+      order: 6;
+      margin-right: 0;
+    }
+  }
 }
 
 .progress__signature::before {
@@ -59,6 +111,14 @@
   background-color: #ffffff;
 }
 
+.progress__signature:hover::before {
+  border-color: #283645;
+}
+
+.progress__signature:active::before {
+  border-color: #d22856;
+}
+
 .progress__signature svg {
   position: absolute;
   left: 8px;
@@ -70,16 +130,11 @@
   fill: #e06989;
 }
 
-input[type="checkbox"]:checked ~ .progress__checkbox-on {
-  display: block;
+.progress__field {
+  width: 45px;
+  height: 45px;
 }
 
-.progress__field {
-  width: 35px;
-  height: 35px;
-  margin-right: 16px;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 58px;
-  }
+.progress__signature span {
+  padding-left: 59px;
 }

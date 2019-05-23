@@ -127,3 +127,13 @@
   top: -249px;
   left: 950px;
 }
+
+.reviews__arrow-left:hover,
+.reviews__arrow-right:hover {
+  fill: rgba(40, 54, 69, 0.6);
+}
+
+.reviews__arrow-left:active,
+.reviews__arrow-right:active {
+  fill: rgba(40, 54, 69, 0.1);
+}

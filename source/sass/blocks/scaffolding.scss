@@ -27,11 +27,39 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-input[type="text"]::placeholder {
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="email"]::placeholder {
   padding-left: 21px;
 
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
+  color: #283645;
+}
+
+input[type="checkbox"]:checked ~ .progress__checkbox-on {
+  display: block;
+}
+
+input[type="checkbox"]:focus + span {
+  outline: 1px solid #283645;
+}
+
+input[type="radio"]:checked ~ .attachment__circle {
+  display: block;
+}
+
+input[type="radio"]:focus + .attachment__text {
+  outline: 1px solid #283645;
+}
+
+textarea::placeholder {
+  padding-top: 22px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: center;
   color: #283645;
 }

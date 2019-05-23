@@ -2,7 +2,7 @@
   position: relative;
 
   padding-top: 68px;
-  padding-bottom: 100px;
+  padding-bottom: 42px;
 
   background-color: #f2f2f2;
   border-collapse: collapse;
@@ -56,6 +56,7 @@
   table-layout: fixed;
 
   width: 840px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     width: 620px;
@@ -326,11 +327,12 @@
 
 .tariffs__toggles {
   @include indents;
-  position: absolute;
-  top: 400px;
-  left: 130px;
+  // position: absolute;
+  // top: 400px;
+  // left: 130px;
 
   display: flex;
+  justify-content: center;
 }
 
 .tariffs__toggle {

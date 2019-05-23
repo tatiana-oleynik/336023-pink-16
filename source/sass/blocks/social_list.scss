@@ -34,6 +34,14 @@
 
   border: 3px solid #e9ebec;
   border-radius: 50%;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: #e9ebec;
+  }
 }
 
 .social-list__picture {
@@ -53,6 +61,10 @@
 
   &--youtube {
     top: 16px;
+  }
+
+  &:active {
+    fill: rgba(210, 40, 86, 0.3);
   }
 }
 

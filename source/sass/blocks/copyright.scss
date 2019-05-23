@@ -47,4 +47,12 @@
   @media (min-width: $desktop-width) {
     left: 390px;
   }
+
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    fill: rgba(40, 54, 69, 0.3);
+  }
 }

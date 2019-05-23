@@ -1,3 +1,17 @@
+.competition__form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .competition__info {
   @include indents;
   padding-top: 56px;
@@ -20,8 +34,8 @@
 
   @media (min-width: $desktop-width) {
     width: 765px;
-    margin-bottom: 81px;
-    padding-top: 101px;
+    margin-bottom: 70px;
+    padding-top: 90px;
   }
 }
 
@@ -47,6 +61,10 @@
     margin-left: 0;
     margin-right: 19px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 16px;
+  }
 }
 
 .competition__field {
@@ -69,9 +87,37 @@
       min-width: 516px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 19px;
+
+    &--surname {
+      min-width: 336px;
+    }
+
+    &--name {
+      min-width: 377px;
+    }
+
+    &--patronymic {
+      min-width: 335px;
+    }
+  }
+}
+
+.competition__field:hover {
+  border-color: #283645;
+}
+
+.competition__field:active {
+  border-color: #d22856;
 }
 
 .competition__item {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+
   &--last {
     margin-bottom: 42px;
 
@@ -81,10 +127,67 @@
   }
 }
 
-.competition__progress-color {
+.competition__progress-color,
+.competition__attachment--wrapper {
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
+  }
+}
+
+.competition__attachment--wrapper {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.competition__progress-color {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+}
+
+.competition__footnote {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: #283645;
+}
+
+.competition__star {
+  color: #d22856;
+}
+
+.competition__grid {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.competition__full-name {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include indents;
+    width: 445px;
+    margin-right: 53px;
+  }
+}
+
+.competition__contacts {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.competition__impressions-wrapper {
+  @media (min-width: $tablet-width) {
+    order: 5;
   }
 }
