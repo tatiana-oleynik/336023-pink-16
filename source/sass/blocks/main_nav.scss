@@ -17,23 +17,40 @@
 .main-nav__toggle {
   position: absolute;
   z-index: 10;
-  right: -5px;
-  top: -50px;
+  right: 20px;
+  top: -45px;
 
   display: block;
-  width: 50px;
-  height: 24px;
-  margin-right: 6%;
+  width: 40px;
+  height: 20px;
 
   background-color: #283645;
   border: none;
 
   @media (min-width: $tablet-width) {
-    right: 5px;
+    top: -60px;
   }
 
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.main-nav__icon-burger {
+  position: absolute;
+
+  top: -1px;
+  right: 1px;
+}
+
+.main-nav__icon-cross {
+  position: absolute;
+
+  top: -1px;
+  right: 3px;
+
+  @media (min-width: $tablet-width) {
+    right: -2px;
   }
 }
 

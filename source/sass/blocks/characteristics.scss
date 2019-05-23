@@ -2,8 +2,8 @@
   @include indents;
   position: relative;
 
-  padding-top: 75px;
-  padding-bottom: 324px;
+  padding-top: 80px;
+  padding-bottom: 316px;
 
   list-style: none;
 
@@ -12,7 +12,7 @@
     flex-direction: column;
     align-items: flex-end;
 
-    padding-top: 56px;
+    padding-top: 49px;
     padding-bottom: 43px;
   }
 
@@ -34,7 +34,7 @@
   left: 60px;
 
   width: 160px;
-  height: 290px;
+  height: 278px;
 
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
@@ -219,10 +219,12 @@
   &--top {
     margin: 0 auto;
     width: 280px;
+    margin-bottom: 5px;
     padding-top: 38px;
 
     @media (min-width: $tablet-width) {
       padding-top: 46px;
+      margin-bottom: 0;
       width: 620px;
     }
 
@@ -240,7 +242,7 @@
 
     @media (min-width: $tablet-width) {
       padding-top: 0;
-      padding-bottom: 44px;
+      padding-bottom: 70px;
       width: 620px;
     }
 
@@ -358,30 +360,16 @@
 
     display: flex;
     justify-content: flex-end;
-  }
-}
 
-.characteristics__wrapper svg {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    position: absolute;
-    top: 50px;
-    left: 10px;
-
-    width: 238px;
-    height: 276px;
-
-    fill: #dedede;
+    background-image: url("../img/sprite/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 237px 278px;
+    background-position: 11px 49px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 20px;
-    left: -5px;
-
-    width: 298px;
-    height: 345px;
+    background-size: 302px 346px;
+    background-position: 0 18px;
   }
 }
 
@@ -426,7 +414,7 @@
 
   @media (min-width: $desktop-width) {
     top: -40px;
-    left: -55px;
+    left: -45px;
 
     width: 200px;
     height: 200px;

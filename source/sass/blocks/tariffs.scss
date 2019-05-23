@@ -1,8 +1,8 @@
 .tariffs {
   position: relative;
 
-  padding-top: 68px;
-  padding-bottom: 42px;
+  padding-top: 93px;
+  padding-bottom: 45px;
 
   background-color: #f2f2f2;
   border-collapse: collapse;
@@ -27,7 +27,7 @@
   display: block;
 
   width: 100%;
-  height: 33px;
+  height: 32px;
   background: url("../img/bg-triangle-white.svg") no-repeat 0 0/100% 100%;
 
   @media (min-width: $tablet-width) {
@@ -69,8 +69,8 @@
 
 .tariffs__item {
   @include indents;
-  width: 280px;
-  height: 58px;
+  width: 278px;
+  height: 60px;
 
   @media (min-width: $tablet-width) {
     width: 152px;
@@ -327,12 +327,12 @@
 
 .tariffs__toggles {
   @include indents;
-  // position: absolute;
-  // top: 400px;
-  // left: 130px;
 
   display: flex;
   justify-content: center;
+
+  padding-top: 5px;
+  margin-left: 14px;
 }
 
 .tariffs__toggle {

@@ -11,7 +11,7 @@
 .reviews__author-name {
   @include indents;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 13px;
 
   font-size: 18px;
   line-height: 30px;
@@ -34,7 +34,7 @@
 
 .reviews__text {
   @include indents;
-  margin-bottom: 38px;
+  margin-bottom: 32px;
 
   font-size: 14px;
   line-height: 30px;
@@ -136,4 +136,8 @@
 .reviews__arrow-left:active,
 .reviews__arrow-right:active {
   fill: rgba(40, 54, 69, 0.1);
+}
+
+.reviews__wrapper {
+  padding-top: 43px;
 }
