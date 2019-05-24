@@ -29,6 +29,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
+    margin-bottom: 2px;
   }
 }
 
@@ -51,8 +52,9 @@
 
   @media (min-width: $desktop-width) {
     width: 690px;
-    padding-top: 188px;
-    padding-left: 130px;
+    padding-top: 145px;
+    padding-left: 124px;
+    margin-bottom: 37px;
   }
 }
 
@@ -73,6 +75,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
+    margin-bottom: 0;
   }
 }
 
@@ -87,8 +90,8 @@
 
   .reviews__quotes {
     position: absolute;
-    top: 70px;
-    left: 50%;
+    top: 74px;
+    left: 47%;
 
     display: block;
 
@@ -120,12 +123,12 @@
 }
 
 .reviews__arrow-left {
-  top: 220px;
+  top: 216px;
 }
 
 .reviews__arrow-right {
-  top: -249px;
-  left: 950px;
+  top: -201px;
+  left: 918px;
 }
 
 .reviews__arrow-left:hover,

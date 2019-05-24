@@ -16,7 +16,7 @@
     top: -734px;
 
     width: 320px;
-    margin-left: 120px;
+    margin-left: 104px;
     padding-top: 49px;
 
     background-color: rgba(0, 0, 0, 0);
@@ -34,17 +34,19 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding-top: 65px;
+    padding-top: 63px;
+    padding-left: 5px;
     margin-bottom: 25px;
 
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 50px;
+    padding-top: 50px;
 
     font-size: 50px;
-    line-height: 58px;
+    line-height: 60px;
   }
 }
 
@@ -73,6 +75,10 @@
 
   &:active {
     color: rgba(210, 40, 86, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -104,11 +110,15 @@
 
 .download-application__item {
   @include indents;
-  margin-right: 37px;
+  margin-right: 35px;
 
   &--last {
     padding-top: 3px;
     margin-right: 0;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 6px;
+    }
   }
 
   &--indent {

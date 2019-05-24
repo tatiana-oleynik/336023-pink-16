@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 728px;
+    min-height: 732px;
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@
 
   @media (min-width: $tablet-width) {
     background-position-y: 255px;
-    min-height: 980px;
+    min-height: 988px;
   }
 }
 
@@ -94,8 +94,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: 67px;
-    left: -20px;
+    top: 72px;
+    left: -25px;
 
     width: 665px;
     height: 550px;
@@ -109,11 +109,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 92px;
-    left: 140px;
+    top: 96px;
+    left: 127px;
 
     width: 890px;
-    height: 650px;
+    height: 646px;
 
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
@@ -221,8 +221,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    @include indents;
     max-width: 940px;
-    margin: 0;
-    padding: 0;
+    margin-right: 170px;
   }
 }

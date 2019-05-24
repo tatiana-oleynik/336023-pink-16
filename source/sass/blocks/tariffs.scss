@@ -13,8 +13,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 120px;
-    padding-bottom: 95px;
+    padding-top: 149px;
+    padding-bottom: 52px;
   }
 }
 
@@ -70,7 +70,7 @@
 .tariffs__item {
   @include indents;
   width: 278px;
-  height: 60px;
+  height: 61px;
 
   @media (min-width: $tablet-width) {
     width: 152px;
@@ -97,7 +97,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 236px;
+    width: 234px;
     height: 100px;
   }
 }
@@ -144,8 +144,8 @@
   display: block;
   width: 74px;
   height: 73px;
-  top: -20px;
-  left: -2px;
+  top: -17px;
+  left: 0;
 
   background-image: url("../img/bg-hit.svg");
 
@@ -161,7 +161,7 @@
   @media (min-width: $desktop-width) {
     width: 73px;
     height: 73px;
-    top: -21px;
+    top: -16px;
 
     background-image: url("../img/bg-hit.svg");
   }
@@ -169,7 +169,7 @@
 
 .tariffs__denotation--hit span {
   position: absolute;
-  top: -6px;
+  top: -2px;
   left: 9px;
 
   font-size: 15px;
@@ -186,8 +186,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -8px;
-    left: 15px;
+    top: 0;
+    left: 10px;
   }
 }
 
@@ -207,6 +207,8 @@
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -247,16 +249,16 @@
 
   @media (min-width: $desktop-width) {
     width: 236px;
-    padding-top: 22px;
-    padding-bottom: 19px;
-    padding-left: 22px;
+    padding-top: 11px;
+    padding-bottom: 18px;
+    padding-left: 20px;
 
     font-size: 18px;
   }
 }
 
 .tariffs__value {
-  padding-left: 26px;
+  padding-left: 23px;
 
   font-size: 14px;
   line-height: 30px;
@@ -311,7 +313,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 15px;
+  right: 19px;
 
   width: 27px;
   height: 26px;
@@ -331,7 +333,7 @@
   display: flex;
   justify-content: center;
 
-  padding-top: 5px;
+  padding-top: 2px;
   margin-left: 14px;
 }
 

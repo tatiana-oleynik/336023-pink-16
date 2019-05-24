@@ -22,7 +22,6 @@
     align-items: baseline;
 
     padding-top: 240px;
-    padding-left: 35px;
   }
 }
 
@@ -75,7 +74,7 @@
   margin-bottom: 30px;
 
   @media (min-width: $desktop-width) {
-    padding-top: 98px;
+    padding-top: 117px;
   }
 
   &--friends {
@@ -107,8 +106,8 @@
     content: "";
 
     position: absolute;
-    top: -256px;
-    left: -20px;
+    top: -241px;
+    left: -27px;
 
     width: 265px;
     height: 303px;
@@ -127,8 +126,8 @@
     content: "";
 
     position: absolute;
-    top: -256px;
-    left: -20px;
+    top: -241px;
+    left: -27px;
 
     width: 265px;
     height: 303px;
@@ -147,8 +146,8 @@
     content: "";
 
     position: absolute;
-    top: -256px;
-    left: -20px;
+    top: -241px;
+    left: -27px;
 
     width: 265px;
     height: 303px;
@@ -212,10 +211,6 @@
     line-height: 10px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-left: 30px;
-  }
-
   &--top {
     margin: 0 auto;
     width: 280px;
@@ -229,8 +224,9 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 80px;
       width: 820px;
+      margin-bottom: 3px;
+      padding-top: 67px;
     }
   }
 
@@ -248,8 +244,9 @@
 
     @media (min-width: $desktop-width) {
       width: 820px;
-      padding-bottom: 144px;
-      padding-left: 40px;
+      padding-bottom: 0;
+      margin-bottom: 81px;
+      padding-left: 15px;
     }
   }
 }
@@ -268,7 +265,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 28px;
+    margin-right: 44px;
     padding-top: 115px;
     padding-bottom: 110px;
   }
@@ -288,7 +285,7 @@
 
   @media (min-width: $desktop-width) {
     width: 530px;
-    margin-bottom: 28px;
+    margin-bottom: 25px;
 
     font-size: 30px;
     line-height: 30px;
@@ -389,6 +386,11 @@
     color: #d22856;
     text-align: center;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 118px;
+    top: 136px;
+  }
 }
 
 .characteristics__clock span {
@@ -413,11 +415,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -40px;
-    left: -45px;
+    top: -38px;
+    left: -56px;
 
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
   }
 }
 

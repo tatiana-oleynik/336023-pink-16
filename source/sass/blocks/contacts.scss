@@ -9,6 +9,7 @@
 .contacts__list {
   @include indents;
   list-style: none;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -66,7 +67,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 70px;
+    margin-bottom: 59px;
+    padding-top: 66px;
   }
 }
 
@@ -80,7 +82,7 @@
   color: #283645;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 33px;
+    margin-bottom: 21px;
   }
 }
 
@@ -91,16 +93,42 @@
   font-size: 24px;
   line-height: normal;
   font-weight: 300;
-  text-align: center;
   color: #d22856;
+  text-align: center;
   text-decoration: none;
+
+  &--tel {
+    text-align: left;
+    padding-left: 37px;
+    letter-spacing: 1px;
+
+    @media (min-width: $desktop-width) {
+      padding-left: 48px;
+      letter-spacing: 1px;
+    }
+  }
 
   &--address {
     font-style: normal;
+
+    @media (min-width: $desktop-width) {
+      width: 211px;
+      padding-left: 41px;
+
+      line-height: 31px;
+      text-align: center;
+    }
   }
 
   &--mail {
     position: relative;
+    padding-left: 4px;
+    margin-bottom: 22px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 2px;
+      padding-left: 29px;
+    }
   }
 
   &--mail:hover {
@@ -217,11 +245,22 @@
 
 .contacts__triangle {
   position: absolute;
+  display: block;
 
   z-index: 50;
-  top: 0;
+  top: -45px;
   width: 100%;
   height: auto;
+
+  fill: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    top: -93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -165px;
+  }
 }
 
 .contacts-user__field:hover {

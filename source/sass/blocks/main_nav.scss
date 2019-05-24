@@ -47,7 +47,7 @@
   position: absolute;
 
   top: -1px;
-  right: 3px;
+  right: 0;
 
   @media (min-width: $tablet-width) {
     right: -2px;
@@ -130,10 +130,14 @@
   @include indents;
   position: relative;
 
-  padding-top: 18px;
-  padding-bottom: 15px;
+  padding-top: 19px;
+  padding-bottom: 14px;
 
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 15px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 45px;
