@@ -114,8 +114,8 @@
 
 .photo-gallery__title {
   margin-top: 0;
-  margin-bottom: 54px;
-  padding-top: 47px;
+  margin-bottom: 48px;
+  padding-top: 45px;
 
   @media (min-width: $tablet-width) {
     width: 440px;
@@ -128,6 +128,10 @@
     padding-top: 92px;
     padding-left: 200px;
   }
+}
+
+.photo-gallery__unit {
+  margin-left: 29px;
 }
 
 .photo-gallery__appeal {
