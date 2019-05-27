@@ -11,7 +11,7 @@
 .reviews__author-name {
   @include indents;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 13px;
 
   font-size: 18px;
   line-height: 30px;
@@ -22,19 +22,20 @@
 
   @media (min-width: $tablet-width) {
     order: 2;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 
     font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
+    margin-bottom: 2px;
   }
 }
 
 .reviews__text {
   @include indents;
-  margin-bottom: 38px;
+  margin-bottom: 32px;
 
   font-size: 14px;
   line-height: 30px;
@@ -44,15 +45,16 @@
 
   @media (min-width: $tablet-width) {
     order: 1;
-    margin-bottom: 41px;
+    margin-bottom: 35px;
 
     font-size: 18px;
   }
 
   @media (min-width: $desktop-width) {
     width: 690px;
-    padding-top: 188px;
-    padding-left: 130px;
+    padding-top: 163px;
+    padding-left: 124px;
+    margin-bottom: 37px;
   }
 }
 
@@ -63,7 +65,7 @@
     @include indents;
     order: 3;
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 34px;
 
     font-size: 14px;
     line-height: 30px;
@@ -73,6 +75,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
+    margin-bottom: 0;
   }
 }
 
@@ -87,8 +90,8 @@
 
   .reviews__quotes {
     position: absolute;
-    top: 70px;
-    left: 50%;
+    top: 74px;
+    left: 47%;
 
     display: block;
 
@@ -120,12 +123,12 @@
 }
 
 .reviews__arrow-left {
-  top: 220px;
+  top: 216px;
 }
 
 .reviews__arrow-right {
-  top: -249px;
-  left: 950px;
+  top: -185px;
+  left: 918px;
 }
 
 .reviews__arrow-left:hover,
@@ -136,4 +139,12 @@
 .reviews__arrow-left:active,
 .reviews__arrow-right:active {
   fill: rgba(40, 54, 69, 0.1);
+}
+
+.reviews__wrapper {
+  padding-top: 43px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+  }
 }
