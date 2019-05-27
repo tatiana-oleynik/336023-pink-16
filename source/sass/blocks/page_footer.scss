@@ -32,18 +32,18 @@
 
 .page-footer__logo-link {
   @include indents;
-  margin-bottom: 39px;
+  margin-bottom: 32px;
   padding-top: 40px;
 
   @media (min-width: $tablet-width) {
     padding-top: 35px;
     margin-bottom: 0;
-    margin-right: 70px;
+    margin-right: 74px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 99px;
-    margin-right: 236px;
+    padding-top: 52px;
+    margin-right: 233px;
   }
 }
 

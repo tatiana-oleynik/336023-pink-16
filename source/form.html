@@ -74,7 +74,7 @@
             </p>
           </div>
           <div class="competition__progress-color">
-            <div class="wrapper">
+            <div class="wrapper wrapper--progress">
               <fieldset class="competition__progress progress">
                 <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
                 <div class="progress__wrapper">
@@ -121,7 +121,7 @@
                   <input class="contacts-user__field" id="tel-user" type="tel" name="telephone" placeholder="Номер, пожалуйста">
                   <svg  class="contacts-user__tel"width="20" height="19"><use xlink:href="#icon-phone"></use></svg>
                 </li>
-                <li class="contacts-user__item">
+                <li class="contacts-user__item contacts-user__item--last">
                   <label class="contacts-user__signature" for="email-user">Адрес почты</label>
                   <input class="contacts-user__field" id="email-user" type="email" name="email" placeholder="Введите почту *" required>
                   <svg class="contacts-user__mail" width="20" height="19"><use xlink:href="#icon-mail"></use></svg>
@@ -159,7 +159,7 @@
             <div class="competition__grid">
               <button class="button" type="submit" value="Отправить форму">Отправить форму</button>
               <p class="competition__footnote">
-                <sup class="competition__star">*</sup> — обязательные поля
+                <sup class="competition__star">*</sup> — обязательные <span class="competition__filling">для заполнения</span> поля
               </p>
             </div>
           </div>
@@ -194,7 +194,7 @@
           <svg class="page-header__logo-pink-blue-mobile" width="147" height="40"><use xlink:href="#logo-pink-blue-mobile"></use></svg>
           <svg class="page-header__logo-pink-blue-desktop" width="147" height="40"><use xlink:href="#logo-pink-blue-desktop"></use></svg>
         </a>
-        <ul class="page-footer__social social-list">
+        <ul class="page-footer__social social-list social-list--form">
           <li class="social-list__item">
             <a class="social-list__link" href="#">
               <span class="visually-hidden">Twitter</span>
@@ -215,8 +215,8 @@
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
-          <span class="copyright__text">Разработано</span>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text copyright__text--form">Разработано</span>
+          <a class="copyright__link copyright__link--form" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">Логотип HTML Academy</span>
             <svg width="27" height="34"><use xlink:href="#logo-htmlacademy"></use></svg>
           </a>

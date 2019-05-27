@@ -1,7 +1,23 @@
+.photo-loading {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+  }
+}
+
 .photo-loading__title {
   @include indents;
-  margin-bottom: 49px;
-  padding-top: 28px;
+  margin-bottom: 43px;
+  padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 6px;
+    margin-bottom: 68px;
+  }
 }
 
 .photo-loading__form {
@@ -13,7 +29,11 @@
     display: flex;
 
     padding-top: 56px;
-    padding-bottom: 56px;
+    padding-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 51px;
   }
 }
 
@@ -34,6 +54,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
+
+    margin-left: 28px;
   }
 }
 
@@ -72,7 +94,6 @@
     }
 
     @media (min-width: $desktop-width) {
-      min-width: 185px;
       margin-bottom: 0;
       margin-right: 42px;
     }
@@ -93,10 +114,14 @@
       background-color: rgba(40, 54, 69, 0.3);
       border: none;
     }
+  }
 
-    @media (min-width: $desktop-width) {
-      min-width: 185px;
-    }
+  @media (min-width: $tablet-width) {
+    min-width: 261px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 185px;
   }
 }
 
@@ -105,7 +130,7 @@
 }
 
 .photo-loading__picture {
-  margin-bottom: 43px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     width: 300px;
@@ -115,14 +140,15 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 80px;
-    margin-right: 91px;
+    padding-top: 4px;
+    margin-right: 61px;
   }
 }
 
 .photo-loading__list {
   @include indents;
   display: flex;
-  justify-content: center;
+  padding-left: 35px;
 
   margin-bottom: 100px;
 
@@ -131,12 +157,14 @@
   @media (min-width: $tablet-width) {
     flex-direction: column;
 
-    margin-bottom: 30px;
+    margin-bottom: 42px;
     padding-top: 9px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 50px;
+    margin-bottom: 141px;
+    padding-top: 0;
   }
 }
 
@@ -154,6 +182,10 @@
     display: flex;
 
     padding-left: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 26px;
   }
 }
 
@@ -179,7 +211,8 @@
     content: "";
 
     position: absolute;
-    top: 50px;
+    top: 47px;
+    left: 25px;
 
     width: 277px;
     height: 1px;
@@ -191,7 +224,7 @@
     content: "";
 
     position: absolute;
-    top: 70px;
+    top: 59px;
 
     width: 410px;
     height: 1px;
@@ -208,7 +241,15 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 29px;
-    margin-bottom: 50px;
+    margin-bottom: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 17px;
+
+    &--fill {
+      margin-bottom: 22px;
+    }
   }
 }
 
@@ -226,8 +267,8 @@
 }
 
 .photo-loading__crop {
-  width: 44px;
-  height: 44px;
+  width: 46px;
+  height: 46px;
 
   @media (min-width: $tablet-width) {
     width: 22px;
@@ -235,23 +276,25 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 44px;
-    height: 44px;
+    width: 49px;
+    height: 47px;
   }
 }
 
 .photo-loading__fill {
   width: 48px;
-  height: 43px;
+  height: 49px;
+  margin-right: 11px;
 
   @media (min-width: $tablet-width) {
     width: 24px;
     height: 22px;
+    padding-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 48px;
-    height: 43px;
+    width: 55px;
+    height: 46px;
   }
 }
 
@@ -263,11 +306,14 @@
   @media (min-width: $tablet-width) {
     width: 16px;
     height: 16px;
+    padding-top: 0;
+    padding-left: 5px;
   }
 
   @media (min-width: $desktop-width) {
     width: 32px;
     height: 32px;
+    padding-left: 8px;
   }
 }
 
@@ -275,7 +321,7 @@
   @include indents;
   position: absolute;
   top: 23px;
-  left: 160px;
+  left: 175px;
 
   width: 15px;
   height: 15px;
@@ -289,14 +335,22 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: 3px;
+    top: 5px;
+
+    width: 14px;
+    height: 14px;
 
     &--crop {
-      left: 210px;
+      left: 198px;
     }
 
     &--fill {
-      left: 90px;
+      left: 77px;
+    }
+
+    &--contrast {
+      top: 1px;
+      left: 148px;
     }
   }
 
@@ -304,15 +358,18 @@
     top: 13px;
 
     &--crop {
-      left: 160px;
+      top: 17px;
+      left: 166px;
     }
 
     &--fill {
-      left: 310px;
+      top: 18px;
+      left: 342px;
     }
 
     &--contrast {
-      left: 250px;
+      top: 10px;
+      left: 255px;
     }
   }
 }
@@ -320,7 +377,7 @@
 .photo-loading__strip {
   position: absolute;
   top: 30px;
-  left: -25px;
+  left: -17px;
 
   display: block;
 
@@ -330,17 +387,25 @@
   background-color: #283645;
 
   @media (min-width: $tablet-width) {
-    top: 10px;
-    left: 60px;
+    &--contrast {
+      top: 7px;
+    }
+
+    top: 11px;
+    left: 52px;
 
     width: 202px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 20px;
-    left: 80px;
+    top: 24px;
+    left: 95px;
 
     width: 289px;
+
+    &--contrast {
+      top: 16px;
+    }
   }
 }
 

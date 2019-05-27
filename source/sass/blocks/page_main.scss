@@ -16,30 +16,35 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    top: -270px;
+    top: -257px;
 
     font-size: 50px;
-    line-height: 53px;
+    line-height: 58px;
   }
 
   @media (min-width: $desktop-width) {
-    top: -230px;
+    top: -218px;
     left: 35%;
 
     line-height: 59px;
   }
 
   &--form {
-    top: -155px;
-    left: 5%;
+    top: -142px;
+    left: 45px;
+
+    width: 230px;
 
     @media (min-width: $tablet-width) {
-      top: -300px;
+      top: -257px;
+      left: 92px;
+
+      width: 475px;
     }
 
     @media (min-width: $desktop-width) {
-      top: -220px;
-      left: 18%;
+      top: -218px;
+      left: 207px;
 
       width: 750px;
     }

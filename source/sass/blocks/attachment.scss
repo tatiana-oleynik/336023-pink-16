@@ -3,25 +3,28 @@
   display: flex;
   flex-direction: column;
 
-  padding-bottom: 40px;
-  margin-bottom: 40px;
+  padding-bottom: 2px;
+  margin-bottom: 32px;
 
   border: none;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 14px;
+    margin-bottom: 51px;
+
     border: 2px solid #e5e5e5;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding-left: 30px;
+    padding-left: 15px;
   }
 }
 
 .attachment__title {
   @include indents;
   padding-top: 40px;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 
   font-size: 14px;
   line-height: 18px;
@@ -34,10 +37,14 @@
     padding-top: 0;
     padding-left: 24px;
     padding-right: 24px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 48px;
+    width: 396px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 51px;
   }
 }
 
@@ -46,7 +53,7 @@
   position: relative;
   display: flex;
 
-  margin-bottom: 33px;
+  margin-bottom: 45px;
 
   font-size: 18px;
   line-height: 30px;
@@ -58,7 +65,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 37px;
+    margin-bottom: 45px;
   }
 }
 
@@ -72,6 +79,7 @@
   content: "";
 
   position: absolute;
+  top: -4px;
 
   width: 37px;
   height: 36px;
@@ -92,7 +100,7 @@
 .attachment__circle {
   position: absolute;
   z-index: 10;
-  top: 12px;
+  top: 8px;
   left: 13px;
 
   display: none;
@@ -105,5 +113,9 @@
 }
 
 .attachment__text {
-  padding-left: 63px;
+  padding-left: 69px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
 }

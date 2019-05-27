@@ -2,7 +2,7 @@
   @include indents;
   display: flex;
 
-  margin-bottom: 39px;
+  margin-bottom: 45px;
 
   list-style: none;
 
@@ -12,13 +12,35 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 102px;
+    padding-top: 70px;
+  }
+
+  &--photo {
+    @media (min-width: $desktop-width) {
+      padding-left: 5px;
+    }
+  }
+
+  &--form {
+    padding-left: 7px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 4px;
+    }
   }
 }
 
 .social-list__item {
   @include indents;
-  margin-right: 10px;
+  margin-right: 9px;
+
+  &--youtube {
+    margin-right: 0;
+  }
 
   @media (min-width: $tablet-width) {
     margin-right: 12px;
@@ -52,7 +74,8 @@
   fill: #d22856;
 
   &--twitter {
-    top: 16px;
+    top: 17px;
+    left: 14px;
   }
 
   &--facebook {
@@ -61,20 +84,14 @@
 
   &--youtube {
     top: 16px;
+    left: 19px;
+
+    @media (min-width: $tablet-width) {
+      left: 16px;
+    }
   }
 
   &:active {
     fill: rgba(210, 40, 86, 0.3);
   }
-}
-
-.copyright__text {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: normal;
-  color: #283645;
-}
-
-.copyright__logo-htmlacademy {
-  fill: #d22856;
 }

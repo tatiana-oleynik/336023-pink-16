@@ -3,13 +3,15 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 57px;
+    margin-bottom: 52px;
 
     border: 2px solid #e5e5e5;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
   }
 }
 
@@ -21,15 +23,15 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    width: 940px;
+    width: 876px;
     margin-left: 58px;
   }
 }
 
 .progress__title {
   width: 218px;
-  margin-bottom: 37px;
-  padding-top: 40px;
+  margin-bottom: 42px;
+  padding-top: 38px;
   margin-left: 20px;
 
   font-size: 14px;
@@ -40,12 +42,16 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 438px;
+    width: 373px;
     padding-top: 0;
     padding-left: 32px;
     padding-right: 32px;
 
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 24px;
   }
 }
 
@@ -55,12 +61,20 @@
   display: flex;
   align-items: center;
 
-  margin-bottom: 42px;
+  margin-bottom: 52px;
 
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
   color: #283645;
+
+  &--hotel {
+    margin-bottom: 48px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 52px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: 58px;
@@ -69,14 +83,15 @@
   @media (min-width: $desktop-width) {
     width: 260px;
     margin-left: 0;
-    margin-right: 50px;
 
     &--shark {
       order: 1;
+      margin-right: 54px;
     }
 
     &--chuck {
       order: 2;
+      margin-right: 36px;
     }
 
     &--tower {
@@ -86,10 +101,12 @@
 
     &--beach {
       order: 4;
+      margin-right: 54px;
     }
 
     &--souvenir {
       order: 5;
+      margin-right: 36px;
     }
 
     &--hotel {
@@ -136,5 +153,9 @@
 }
 
 .progress__signature span {
-  padding-left: 59px;
+  padding-left: 68px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
 }
