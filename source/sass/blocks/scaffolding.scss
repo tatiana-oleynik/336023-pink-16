@@ -55,11 +55,11 @@ input[type="radio"]:focus + .attachment__text {
 }
 
 textarea::placeholder {
-  padding-top: 22px;
+  padding-top: 12px;
+  padding-left: 17px;
 
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
-  text-align: center;
   color: #283645;
 }

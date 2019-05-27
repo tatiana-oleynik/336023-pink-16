@@ -16,7 +16,7 @@
     flex-wrap: wrap;
     flex-grow: 1;
     justify-content: center;
-    margin-bottom: 0;
+    margin-bottom: 24px;
 
     width: 620px;
   }
@@ -26,6 +26,7 @@
     justify-content: space-between;
 
     width: 940px;
+    margin-bottom: 0;
   }
 }
 
@@ -37,6 +38,10 @@
     width: 300px;
     margin-bottom: 44px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__item--tel {
@@ -46,6 +51,10 @@
 }
 
 .contacts__item-address {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
   @media (min-width: $desktop-width) {
     order: 2;
   }
@@ -230,7 +239,7 @@
 
 @media (min-width: $desktop-width) {
   .contacts__map {
-    height: 503px;
+    height: 524px;
 
     background-image: url("../img/bg-map-desktop@1x.jpg");
     background-repeat: no-repeat;
@@ -261,7 +270,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 104px;
+    height: 145px;
+
+    top: 0;
+    left: 0;
+    background-size: cover;
   }
 }
 
@@ -281,7 +294,7 @@
 
   @media (min-width: $desktop-width) {
     z-index: 10;
-    height: 503px;
+    height: 524px;
   }
 }
 
@@ -301,26 +314,6 @@
     left: 568px;
   }
 }
-
-// .contacts__triangle {
-//   position: absolute;
-//   display: block;
-//
-//   z-index: 50;
-//   top: -45px;
-//   width: 100%;
-//   height: auto;
-//
-//   fill: #ffffff;
-//
-//   @media (min-width: $tablet-width) {
-//     top: -93px;
-//   }
-//
-//   @media (min-width: $desktop-width) {
-//     top: -165px;
-//   }
-// }
 
 .contacts-user__field:hover {
   border-color: #283645;

@@ -4,7 +4,7 @@
 
 .copyright__text {
   position: absolute;
-  left: -80px;
+  left: -78px;
 
   font-size: 14px;
   line-height: 18px;
@@ -12,15 +12,27 @@
   color: #283645;
 
   @media (min-width: $tablet-width) {
-    top: 40px;
-    left: 60px;
+    top: 38px;
+    left: 78px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 90px;
-    left: 250px;
+    top: 76px;
+    left: 214px;
 
     font-size: 18px;
+  }
+
+  &--photo {
+    @media (min-width: $desktop-width) {
+      left: 210px;
+    }
+  }
+
+  &--form {
+    @media (min-width: $desktop-width) {
+      left: 210px;
+    }
   }
 }
 
@@ -31,8 +43,8 @@
 
 .copyright__link svg {
   position: absolute;
-  top: -10px;
-  left: 20px;
+  top: -6px;
+  left: 25px;
 
   width: 27px;
   height: 34px;
@@ -40,12 +52,13 @@
   fill: #d22856;
 
   @media (min-width: $tablet-width) {
-    top: -20px;
-    left: 160px;
+    top: -18px;
+    left: 179px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 390px;
+    top: -28px;
+    left: 340px;
   }
 
   &:hover {
@@ -55,4 +68,20 @@
   &:active {
     fill: rgba(40, 54, 69, 0.3);
   }
+}
+
+.copyright__link--photo svg {
+  @media (min-width: $desktop-width) {
+    left: 337px;
+  }
+}
+
+.copyright__link--form svg {
+  @media (min-width: $desktop-width) {
+    left: 336px;
+  }
+}
+
+.copyright__logo-htmlacademy {
+  fill: #d22856;
 }

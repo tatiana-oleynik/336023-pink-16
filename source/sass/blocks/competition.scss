@@ -14,8 +14,8 @@
 
 .competition__info {
   @include indents;
-  padding-top: 56px;
-  margin-bottom: 49px;
+  padding-top: 44px;
+  margin-bottom: 34px;
 
   font-size: 14px;
   line-height: 30px;
@@ -26,8 +26,8 @@
   @media (min-width: $tablet-width) {
     width: 496px;
     margin: 0 auto;
-    margin-bottom: 76px;
-    padding-top: 98px;
+    margin-bottom: 65px;
+    padding-top: 92px;
 
     font-size: 18px;
   }
@@ -35,7 +35,7 @@
   @media (min-width: $desktop-width) {
     width: 765px;
     margin-bottom: 70px;
-    padding-top: 90px;
+    padding-top: 94px;
   }
 }
 
@@ -59,32 +59,37 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
-    margin-right: 19px;
+    margin-right: 14px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 16px;
+    margin-right: 14px;
   }
 }
 
 .competition__field {
-  width: 280px;
-  padding-top: 24px;
-  padding-bottom: 21px;
+  width: 277px;
+  padding-top: 21px;
+  padding-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 17px;
 
   border: 2px solid #e5e5e5;
+  border-radius: 2px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+
     &--surname {
-      min-width: 516px;
+      min-width: 521px;
     }
 
     &--name {
-      min-width: 557px;
+      min-width: 561px;
     }
 
     &--patronymic {
-      min-width: 516px;
+      min-width: 521px;
     }
   }
 
@@ -114,15 +119,21 @@
 }
 
 .competition__item {
+  @include indents;
+
   @media (min-width: $desktop-width) {
-    margin-bottom: 50px;
+    margin-bottom: 2px;
   }
 
   &--last {
-    margin-bottom: 42px;
+    margin-bottom: 22px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 61px;
+      margin-bottom: 12px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 4px;
     }
   }
 }
@@ -155,6 +166,15 @@
   text-transform: uppercase;
   text-align: center;
   color: #283645;
+
+  @media (min-width: $tablet-width) {
+    @include indents;
+    margin-top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 5px;
+  }
 }
 
 .competition__star {
@@ -168,6 +188,18 @@
   }
 }
 
+.competition__grid button {
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 4px;
+  }
+}
+
 .competition__full-name {
   @media (min-width: $tablet-width) {
     order: 1;
@@ -176,7 +208,8 @@
   @media (min-width: $desktop-width) {
     @include indents;
     width: 445px;
-    margin-right: 53px;
+    margin-right: 49px;
+    margin-top: 10px;
   }
 }
 
@@ -184,10 +217,28 @@
   @media (min-width: $tablet-width) {
     order: 3;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-left: 0;
+  }
 }
 
 .competition__impressions-wrapper {
   @media (min-width: $tablet-width) {
     order: 5;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.competition__filling {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
   }
 }

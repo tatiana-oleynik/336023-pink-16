@@ -14,22 +14,11 @@
     padding-right: 10px;
   }
 
-  // &--full-name {
-  //   max-width: 280px;
-  //   margin: 0 auto;
-  //   padding-left: 20px;
-  //   padding-right: 20px;
-  //
-  //   @media (min-width: $tablet-width) {
-  //     max-width: 620px;
-  //   }
-  //
-  //   @media (min-width: $desktop-width) {
-  //     margin: 0;
-  //     padding: 0;
-  //     max-width: 433px;
-  //   }
-  // }
+  &--progress {
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+    }
+  }
 }
 
 .wrapper__message {
